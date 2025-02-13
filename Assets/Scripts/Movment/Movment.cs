@@ -3,34 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Movement
+public class Movement : MovmentBase
 {
-    private float _speed;
-    private Rigidbody2D _rb;
+    [SerializeField] private float speed;
+    private float moveInput;
 
-    public Movement(float speed, Rigidbody2D rb)
+    private void Update()
     {
-        _speed = speed;
-        _rb = rb;
+        SpriteFlip();
     }
 
-    public virtual void HandleInput(float moveInput)
+    private void SpriteFlip()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        if (mousePosition.x < _rb.transform.position.x)
-        {
-            _rb.transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if (mousePosition.x > _rb.transform.position.x)
-        {
-            _rb.transform.localScale = new Vector3(-1, 1, 1);
-        }
+        transform.localScale = new Vector3(mousePosition.x < transform.position.x ? 1 : -1, 1, 1);
     }
 
-    public virtual void Move(float moveInput)
+    public override void ActionLogic()
     {
-        _rb.linearVelocity = new Vector2(moveInput * _speed, _rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+    }
+
+    public override void ActionRequest(float moveInput)
+    {
+        this.moveInput = moveInput;
     }
 }
 

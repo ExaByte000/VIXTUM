@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 8763358924297402726}
   - component: {fileID: 3580374769625423324}
   - component: {fileID: 5401324445495539514}
-  - component: {fileID: 4271377828009028551}
+  - component: {fileID: -3455310677193864811}
   m_Layer: 7
   m_Name: WalkingEnemyPref
   m_TagString: Untagged
@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 2006469917987911856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.973553, y: 2.6576962, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -240,7 +240,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4271377828009028551
+--- !u!114 &-3455310677193864811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,15 +249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2006469917987911856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2781074942037854292159159e367ee6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7963135a6122c0d419b101607de81763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
-  detectRange: 5
-  layer:
-    serializedVersion: 2
-    m_Bits: 576
-  target: {fileID: 7366122863239784941, guid: 0b1006a78cb352642a40e6f06def19f0, type: 3}
-  speed: 0.35
-  scoreSystem: {fileID: 6088181931352722976, guid: bbf8484b46c08e04a8e2229ac5123d81, type: 3}
-  jumpForce: 6
+  health: 3

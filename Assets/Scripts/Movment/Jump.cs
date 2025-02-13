@@ -3,45 +3,57 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Jump
+public class Jump : MovmentBase
 {
-    protected float _jumpForce;
-    protected Rigidbody2D _rb;
-    public bool jumpRequest;
-    protected int _jumpBuffer = 1;
-    public bool isGrounded;
-    public ActionType actionType = ActionType.Jump;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private LayerMask groundLayer; 
 
-    public Jump(float jumpForce, Rigidbody2D rb)
+    private bool jumpRequest;
+    private bool isGrounded;
+    private BoxCollider2D boxCollider;
+    private Coroutine jumpTimer;
+
+    public bool JumpReqest { get { return jumpRequest; } }
+
+    protected override void Awake()
     {
-        _jumpForce = jumpForce;
-        _rb = rb;
+        base.Awake();
+        boxCollider = GetComponentInParent<BoxCollider2D>();
     }
-
-    public void RequestJump()
+    public override void ActionRequest(float moveInput)
     {
         jumpRequest = true;
+        if(jumpTimer != null) StopCoroutine(jumpTimer);
+        jumpTimer = StartCoroutine(nameof(JumpTimer));
     }
 
-    public virtual void JumpLogic()
+    public override void ActionLogic()
     {
-        if (jumpRequest && (isGrounded || _jumpBuffer > 0))
+        if (jumpRequest && isGrounded)
         {
-            _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpRequest = false;
-            _jumpBuffer--;
         }
-        if (isGrounded) _jumpBuffer = 1;
     }
 
-    public void GroundCheck(BoxCollider2D collider, LayerMask groundLayer)
+    private void GroundCheck()
     {
-        Vector2 boxCenter = new(collider.bounds.center.x, collider.bounds.min.y - 0.1f);
-        Vector2 boxSize = new(collider.bounds.size.x * 1.2f, 0.1f);
+        Vector2 boxCenter = new(boxCollider.bounds.center.x, boxCollider.bounds.min.y - 0.1f);
+        Vector2 boxSize = new(boxCollider.bounds.size.x * 1.2f, 0.1f);
 
         Collider2D[] hits = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, groundLayer);
         isGrounded = hits.Length > 0;
     }
-    
+
+    private void FixedUpdate()
+    {
+        GroundCheck();
+    }
+
+    private IEnumerator JumpTimer()
+    {
+        yield return new WaitForSeconds(0.1f);
+        jumpRequest = false;
+    }
 }
 

@@ -2,37 +2,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dash
+public class Dash : MovmentBase
 {
-    protected float _dashForce;
-    private float _dashDuration;
-    protected Rigidbody2D _rb;
-    public bool isDashing;
-    public int dashBuffer = 1;
-    public float originalGravity;
-    public ActionType actionType = ActionType.Dash;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCoolDown;
+    
+    private bool isDashing = false;
+    private bool canDash = true;
+    private float originalGravity;
+    private Coroutine dashRoutine;
+    private float moveInput;
 
-    public Dash(float dashForce, float dashDuration, Rigidbody2D rb)
-    {
-        _dashForce = dashForce;
-        _dashDuration = dashDuration;
-        _rb = rb;
-    }
+    public bool IsDashing {  get { return isDashing; } }
+    public float DashDuration {  get { return dashDuration; } }
 
-    public void RequestDash()
+    public override void ActionRequest(float moveInput)
     {
-        isDashing = true;
-    }
-
-    public virtual void DashLogic()
-    {
-        originalGravity = _rb.gravityScale;
-        Vector2 inputDirection = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (inputDirection != Vector2.zero)
+        if (canDash) 
         {
-            _rb.linearVelocity = inputDirection.normalized * _dashForce;
+            this.moveInput = moveInput;
+            isDashing = true;
+            canDash = false;
+            if (dashRoutine != null) StopCoroutine(dashRoutine);
+            dashRoutine = StartCoroutine(nameof(DashRoutine));
         }
-        dashBuffer--;
     }
+
+    public override void ActionLogic()
+    {
+        if (isDashing)
+        {
+            rb.linearVelocityX = moveInput * dashForce;
+        }
+    }
+
+    private IEnumerator DashRoutine()
+    {
+        originalGravity = rb.gravityScale;
+        rb.gravityScale = 0;
+        rb.linearVelocityY = 0f;
+
+        yield return new WaitForSeconds(dashDuration);
+
+        isDashing = false;
+        rb.gravityScale = originalGravity;
+        rb.linearVelocityX = 0;
+
+        yield return new WaitForSeconds(dashCoolDown);
+        canDash = true;
+    }
+
 
 }

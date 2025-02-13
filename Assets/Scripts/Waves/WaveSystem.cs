@@ -6,7 +6,7 @@ public class WaveSystem : MonoBehaviour
 {
     [HideInInspector] public static event Action StartWave;
     [HideInInspector] public static event Action StopWave;
-    private int waveCount = 0;
+    private int waveCounter = 0;
     [SerializeField] private int waveDuration;
     [SerializeField] private int chillDuration;
 
@@ -17,14 +17,19 @@ public class WaveSystem : MonoBehaviour
 
     private IEnumerator WaveCoroutine()
     {
+        yield return new WaitForSeconds(10);
+        StartWave?.Invoke();
+        waveCounter++;
+
         while (true)
         {
 
-            yield return new WaitForSeconds(chillDuration);
-            //StartWave.Invoke();
-            waveCount++;
             yield return new WaitForSeconds(waveDuration);
-            //StopWave.Invoke();
+            StopWave?.Invoke();
+
+            yield return new WaitForSeconds(chillDuration);
+            StartWave?.Invoke();
+            waveCounter++;
         }
 
 

@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 8126695696565072854}
   - component: {fileID: 2198657085094261728}
   - component: {fileID: 426877183637470113}
-  - component: {fileID: 7673518067029819866}
+  - component: {fileID: -6197236326245838683}
   m_Layer: 7
   m_Name: FlyingEnemyPref
   m_TagString: Untagged
@@ -159,7 +159,7 @@ Transform:
   m_GameObject: {fileID: 7590551357699065004}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -87.22, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -230,7 +230,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7673518067029819866
+--- !u!114 &-6197236326245838683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,17 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7590551357699065004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88570a52f5adbc848bd719d9897399c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 7963135a6122c0d419b101607de81763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
-  detectRange: 6
-  layer:
-    serializedVersion: 2
-    m_Bits: 576
-  target: {fileID: 7366122863239784941, guid: 0b1006a78cb352642a40e6f06def19f0, type: 3}
-  speed: 0.4
-  scoreSystem: {fileID: 6088181931352722976, guid: bbf8484b46c08e04a8e2229ac5123d81, type: 3}
-  _diveSpeed: 5
-  _returnSpeed: 4
-  _diveDistanceThreshold: 0
+  health: 1
