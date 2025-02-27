@@ -8,15 +8,16 @@ public class Movement : MovmentBase
     [SerializeField] private float speed;
     private float moveInput;
 
-    private void Update()
-    {
-        SpriteFlip();
-    }
-
     private void SpriteFlip()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.localScale = new Vector3(mousePosition.x < transform.position.x ? 1 : -1, 1, 1);
+        if(moveInput > 0)
+        {
+            transform.parent.localScale = new Vector3(1,1,1);
+        }
+        else if(moveInput < 0)
+        {
+            transform.parent.localScale = new Vector3(-1,1,1);
+        }
     }
 
     public override void ActionLogic()
@@ -27,6 +28,7 @@ public class Movement : MovmentBase
     public override void ActionRequest(float moveInput)
     {
         this.moveInput = moveInput;
+        SpriteFlip();
     }
 }
 

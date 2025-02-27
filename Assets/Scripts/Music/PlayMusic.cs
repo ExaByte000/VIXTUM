@@ -7,16 +7,16 @@ public class PlayMusic : MonoBehaviour
         TestBackgroundMusic.Play();
     }
 
-    private void OnEnable()
-    {
-        WaveSystem.StartWave += TestBackgroundMusic.PlayFront;
-        WaveSystem.StopWave += TestBackgroundMusic.StopFront;
-    }
-    private void OnDisable()
-    {
-        WaveSystem.StartWave -= TestBackgroundMusic.PlayFront;
-        WaveSystem.StopWave -= TestBackgroundMusic.StopFront;
-    }
+    //private void OnEnable()
+    //{
+    //    WaveSystem.StartWave += TestBackgroundMusic.PlayFront;
+    //    WaveSystem.StopWave += TestBackgroundMusic.StopFront;
+    //}
+    //private void OnDisable()
+    //{
+    //    WaveSystem.StartWave -= TestBackgroundMusic.PlayFront;
+    //    WaveSystem.StopWave -= TestBackgroundMusic.StopFront;
+    //}
 
     // Update is called once per frame
     //void Update()
