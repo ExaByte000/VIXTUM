@@ -3,6 +3,8 @@ using UnityEngine;
 public class HeroInjector : MonoBehaviour
 {
     [SerializeField] private HeroMovmentController controller;
+    [SerializeField] private Animator anim;
+
     private Dash dash;
     private Jump jump;
     public bool JumpPressed => Input.GetButtonDown("Jump");
@@ -20,7 +22,10 @@ public class HeroInjector : MonoBehaviour
         if(jump.JumpReqest) return;
 
         if (JumpPressed)
+        {
             controller.Inject(jump);
+        }
+            
 
         else if (DashPressed)
         {
@@ -28,6 +33,9 @@ public class HeroInjector : MonoBehaviour
         }
 
         else
+        {
             controller.Inject(GetComponent<Movement>());
+        }
+            
     }
 }

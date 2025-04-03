@@ -6,7 +6,7 @@ using UnityEngine;
 public class Jump : MovmentBase
 {
     [SerializeField] private float jumpForce;
-    [SerializeField] private LayerMask groundLayer; 
+    [SerializeField] private LayerMask groundLayer;
 
     private bool jumpRequest;
     private bool isGrounded;
@@ -14,6 +14,7 @@ public class Jump : MovmentBase
     private Coroutine jumpTimer;
 
     public bool JumpReqest { get { return jumpRequest; } }
+    public bool IsGrounded { get { return isGrounded; } }
 
     protected override void Awake()
     {

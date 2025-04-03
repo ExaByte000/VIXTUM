@@ -1,10 +1,12 @@
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class Footsteps : MonoBehaviour
 {
-   public void PlayFootsteps()
+    public void PlayFootsteps()
     {
-        RuntimeManager.PlayOneShot("event:/Foot_Step_Sleep");
+        RuntimeManager.PlayOneShot("event:/FootstepsInTutorial");
     }
+
 }

@@ -12,8 +12,8 @@ public class MusicSettings : MonoBehaviour
     private UnityEngine.UI.Slider slider;
     private void Awake()
     {
-        backgroundMusic = RuntimeManager.GetBus("bus:/SleepMusic");
-        stepsSounds = RuntimeManager.GetBus("bus:/StepSounds");
+        backgroundMusic = RuntimeManager.GetBus("bus:/Music");
+        stepsSounds = RuntimeManager.GetBus("bus:/Sounds");
         slider = GetComponent<UnityEngine.UI.Slider>();
         
     }

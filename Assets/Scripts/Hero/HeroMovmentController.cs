@@ -11,7 +11,6 @@ public class HeroMovmentController : MonoBehaviour
         _moveReqest = move;
     }
 
-
     private void Update()
     {
         if (_moveReqest != null)

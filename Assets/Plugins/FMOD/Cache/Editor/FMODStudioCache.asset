@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5636911870019610650
+--- !u!114 &-6865223827220670220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Foot_Step_Sleep
+  m_Name: event:/Jump_DOWN
   m_EditorClassIdentifier: 
-  Path: event:/Foot_Step_Sleep
+  Path: event:/Jump_DOWN
   Guid:
-    Data1: -825706811
-    Data2: 1124704447
-    Data3: 1254360488
-    Data4: -1622200787
+    Data1: 371690380
+    Data2: 1312073069
+    Data3: 1507114414
+    Data4: 50611533
   Banks:
-  - {fileID: 4738083464347309299}
+  - {fileID: -6244394012098743890}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 384
---- !u!114 &-4784247194701989460
+  Length: 705
+--- !u!114 &-6244394012098743890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,24 +36,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sword
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Tutorial.bank
   m_EditorClassIdentifier: 
-  Path: event:/Sword
-  Guid:
-    Data1: -630885674
-    Data2: 1289579137
-    Data3: 63240593
-    Data4: -1881554230
-  Banks:
-  - {fileID: 7603534496100961986}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15386
+  Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.bank
+  Name: Tutorial
+  StudioPath: bank:/Tutorial
+  lastModified: 638784296124670567
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-806125834040652772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Tutorial.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.strings.bank
+  Name: Tutorial.strings
+  StudioPath: bank:/Tutorial.strings
+  lastModified: 638784296124690801
+  FileSizes:
+  - Name: 
+    Value: 996
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,102 +78,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 227212785651348279}
-  - {fileID: 361953884185873028}
-  - {fileID: 4738083464347309299}
-  - {fileID: 7603534496100961986}
+  - {fileID: -806125834040652772}
+  - {fileID: -6244394012098743890}
   EditorEvents:
-  - {fileID: 5503428361535172099}
-  - {fileID: -5636911870019610650}
-  - {fileID: -4784247194701989460}
+  - {fileID: 8792640276891326626}
+  - {fileID: 4562752140933099497}
+  - {fileID: -6865223827220670220}
+  - {fileID: 8609121517630257668}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4738083464347309299}
+  - {fileID: -6244394012098743890}
   StringsBanks:
-  - {fileID: 227212785651348279}
-  cacheTime: 638762101405459865
-  cacheVersion: 131621
---- !u!114 &227212785651348279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MasterStepSleep.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/FootStepsSleep/Build/Desktop/MasterStepSleep.strings.bank
-  Name: MasterStepSleep.strings
-  StudioPath: bank:/MasterStepSleep.strings
-  lastModified: 638762101405459865
-  FileSizes:
-  - Name: 
-    Value: 1030
-  Exists: 1
---- !u!114 &361953884185873028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MasterSleepMusic.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/FootStepsSleep/Build/Desktop/MasterSleepMusic.bank
-  Name: MasterSleepMusic
-  StudioPath: bank:/MasterSleepMusic
-  lastModified: 638762101405133247
-  FileSizes: []
-  Exists: 1
---- !u!114 &2929334905638752579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Track 1/Parameter 1
-  m_EditorClassIdentifier: 
-  Name: Parameter 1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2003512380
-    data2: 1664712984
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &4738083464347309299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MasterStepSleep.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/FootStepsSleep/Build/Desktop/MasterStepSleep.bank
-  Name: MasterStepSleep
-  StudioPath: bank:/MasterStepSleep
-  lastModified: 638762101405439801
-  FileSizes: []
-  Exists: 1
---- !u!114 &5503428361535172099
+  - {fileID: -806125834040652772}
+  cacheTime: 638784296124690801
+  cacheVersion: 131846
+--- !u!114 &4562752140933099497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,24 +102,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sleep_Music
+  m_Name: event:/TutorialMusic
   m_EditorClassIdentifier: 
-  Path: event:/Sleep_Music
+  Path: event:/TutorialMusic
   Guid:
-    Data1: 2030832370
-    Data2: 1251761976
-    Data3: -1810361679
-    Data4: 1867527413
+    Data1: -1893910938
+    Data2: 1280053906
+    Data3: -526550634
+    Data4: -1393450319
   Banks:
-  - {fileID: 361953884185873028}
-  IsStream: 1
+  - {fileID: -6244394012098743890}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 164064
---- !u!114 &6136824235289202796
+--- !u!114 &8609121517630257668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,25 +129,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Track 1
+  m_Name: event:/Jump_UP
   m_EditorClassIdentifier: 
-  Path: event:/Track 1
+  Path: event:/Jump_UP
   Guid:
-    Data1: -1576886606
-    Data2: 1090226924
-    Data3: 1377475507
-    Data4: 1431564421
+    Data1: 478238634
+    Data2: 1252888324
+    Data3: 661160121
+    Data4: -1396341422
   Banks:
-  - {fileID: 7683515919579237347}
-  IsStream: 1
+  - {fileID: -6244394012098743890}
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 2929334905638752579}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 514056
---- !u!114 &6342369202807966460
+  Length: 817
+--- !u!114 &8792640276891326626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,50 +155,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FootstepsInTutorial
   m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638696400407827424
-  FileSizes:
-  - Name: 
-    Value: 810
-  Exists: 1
---- !u!114 &7603534496100961986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Sword.bank
-  m_EditorClassIdentifier: 
-  Path: ../../FMOD Studio/FootStepsSleep/Build/Desktop/Sword.bank
-  Name: Sword
-  StudioPath: bank:/Sword
-  lastModified: 638762035211014147
-  FileSizes: []
-  Exists: 1
---- !u!114 &7683515919579237347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Sounds/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 638696400407807429
-  FileSizes: []
-  Exists: 1
+  Path: event:/FootstepsInTutorial
+  Guid:
+    Data1: 772629827
+    Data2: 1339105239
+    Data3: -509035085
+    Data4: 1850045157
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 384

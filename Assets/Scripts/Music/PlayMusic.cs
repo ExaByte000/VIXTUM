@@ -4,7 +4,7 @@ public class PlayMusic : MonoBehaviour
 {
     private void Start()
     {
-        TestBackgroundMusic.Play();
+        TutorialBackgroundMusic.Play();
     }
 
     //private void OnEnable()
