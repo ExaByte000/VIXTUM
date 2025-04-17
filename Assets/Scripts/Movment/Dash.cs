@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class Dash : MovmentBase
+public class Dash : MovmentBase, ICharacterMovement
 {
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
@@ -13,15 +14,22 @@ public class Dash : MovmentBase
     private float originalGravity;
     private Coroutine dashRoutine;
     private float moveInput;
+    private float lastMoveInput;
+
+    public int Priority => 3;
+    public bool WantsControl => IsDashing;
 
     public bool IsDashing {  get { return isDashing; } }
     public float DashDuration {  get { return dashDuration; } }
 
-    public override void ActionRequest(float moveInput)
+    
+
+    public void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
-        if (canDash) 
+        this.moveInput = moveInput;
+        if (moveInput != 0) lastMoveInput = moveInput;
+        if (canDash && dashPressed) 
         {
-            this.moveInput = moveInput;
             isDashing = true;
             canDash = false;
             if (dashRoutine != null) StopCoroutine(dashRoutine);
@@ -29,10 +37,15 @@ public class Dash : MovmentBase
         }
     }
 
-    public override void ActionLogic()
+    public void ActionLogic()
     {
         if (isDashing)
         {
+            if (moveInput == 0)
+            {
+                rb.linearVelocityX = lastMoveInput * dashForce;
+                return;
+            }
             rb.linearVelocityX = moveInput * dashForce;
         }
     }
@@ -42,7 +55,7 @@ public class Dash : MovmentBase
         originalGravity = rb.gravityScale;
         rb.gravityScale = 0;
         rb.linearVelocityY = 0f;
-
+        
         yield return new WaitForSeconds(dashDuration);
 
         isDashing = false;

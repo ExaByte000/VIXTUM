@@ -3,32 +3,40 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Jump : MovmentBase
+public class Jump : MovmentBase, ICharacterMovement
 {
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask groundLayer;
 
     private bool jumpRequest;
     private bool isGrounded;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D boxCollider;
     private Coroutine jumpTimer;
 
     public bool JumpReqest { get { return jumpRequest; } }
     public bool IsGrounded { get { return isGrounded; } }
 
+    public bool WantsControl => jumpRequest;
+
+    public int Priority => 2;
+
     protected override void Awake()
     {
         base.Awake();
-        boxCollider = GetComponentInParent<BoxCollider2D>();
+        boxCollider = GetComponentInParent<CapsuleCollider2D>();
     }
-    public override void ActionRequest(float moveInput)
+    public void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
-        jumpRequest = true;
-        if(jumpTimer != null) StopCoroutine(jumpTimer);
-        jumpTimer = StartCoroutine(nameof(JumpTimer));
+        if (jumpPressed)
+        {
+            jumpRequest = true;
+            if (jumpTimer != null) StopCoroutine(jumpTimer);
+            jumpTimer = StartCoroutine(nameof(JumpTimer));
+        }
+        
     }
 
-    public override void ActionLogic()
+    public void ActionLogic()
     {
         if (jumpRequest && isGrounded)
         {

@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8184634799608579026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps_In_Tutorial
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps_In_Tutorial
+  Guid:
+    Data1: 772629827
+    Data2: 1339105239
+    Data3: -509035085
+    Data4: 1850045157
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 384
 --- !u!114 &-6865223827220670220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,9 +37,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Jump_DOWN
+  m_Name: event:/Jump_Down
   m_EditorClassIdentifier: 
-  Path: event:/Jump_DOWN
+  Path: event:/Jump_Down
   Guid:
     Data1: 371690380
     Data2: 1312073069
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.bank
   Name: Tutorial
   StudioPath: bank:/Tutorial
-  lastModified: 638793163474497002
+  lastModified: 638805215896010633
   FileSizes: []
   Exists: 1
---- !u!114 &-6228576881972334472
+--- !u!114 &-4845978270620849043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,9 +82,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DASH
+  m_Name: event:/Door_Sleep
   m_EditorClassIdentifier: 
-  Path: event:/DASH
+  Path: event:/Door_Sleep
+  Guid:
+    Data1: -818978980
+    Data2: 1317467918
+    Data3: -1351731291
+    Data4: 437653279
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 839
+--- !u!114 &-2164990948578635366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial_Dash
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial_Dash
   Guid:
     Data1: 873649973
     Data2: 1256942546
@@ -87,10 +141,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.strings.bank
   Name: Tutorial.strings
   StudioPath: bank:/Tutorial.strings
-  lastModified: 638793163474507126
+  lastModified: 638805215896031195
   FileSizes:
   - Name: 
-    Value: 1032
+    Value: 1088
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -108,19 +162,20 @@ MonoBehaviour:
   - {fileID: -806125834040652772}
   - {fileID: -6244394012098743890}
   EditorEvents:
-  - {fileID: 8792640276891326626}
-  - {fileID: 4562752140933099497}
   - {fileID: -6865223827220670220}
   - {fileID: 8609121517630257668}
-  - {fileID: -6228576881972334472}
+  - {fileID: -2164990948578635366}
+  - {fileID: -8184634799608579026}
+  - {fileID: 3822073522588812323}
+  - {fileID: -4845978270620849043}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6244394012098743890}
   StringsBanks:
   - {fileID: -806125834040652772}
-  cacheTime: 638793163474507126
+  cacheTime: 638805215896031195
   cacheVersion: 131846
---- !u!114 &4562752140933099497
+--- !u!114 &3822073522588812323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,9 +185,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/TutorialMusic
+  m_Name: event:/Tutorial_Music
   m_EditorClassIdentifier: 
-  Path: event:/TutorialMusic
+  Path: event:/Tutorial_Music
   Guid:
     Data1: -1893910938
     Data2: 1280053906
@@ -157,9 +212,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Jump_UP
+  m_Name: event:/Jump_Up
   m_EditorClassIdentifier: 
-  Path: event:/Jump_UP
+  Path: event:/Jump_Up
   Guid:
     Data1: 478238634
     Data2: 1252888324
@@ -174,30 +229,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 817
---- !u!114 &8792640276891326626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/FootstepsInTutorial
-  m_EditorClassIdentifier: 
-  Path: event:/FootstepsInTutorial
-  Guid:
-    Data1: 772629827
-    Data2: 1339105239
-    Data3: -509035085
-    Data4: 1850045157
-  Banks:
-  - {fileID: -6244394012098743890}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 384

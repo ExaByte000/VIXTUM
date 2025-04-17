@@ -10,7 +10,7 @@ public class Dashes : MonoBehaviour
     {
         if (!previousDashState && dash.IsDashing)
         {
-            RuntimeManager.PlayOneShot("event:/DASH");
+            RuntimeManager.PlayOneShot("event:/Tutorial_Dash");
         }
         previousDashState = dash.IsDashing;
     }

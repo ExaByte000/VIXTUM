@@ -48,10 +48,10 @@ public class Enemy : Entity
 
     protected virtual void Update()
     {
-        if (detectObjects.DetectForAttack(transform.localScale.x, layer).Count() != targetsCountInTriggerZone)
+        if (detectObjects.DetectForAttack(detectRange, layer).Count() != targetsCountInTriggerZone)
         {
 
-            //UpdateCountOfTargets();
+            UpdateCountOfTargets();
             //if (check != null)
             //{
             //    StopCoroutine(check);
@@ -64,14 +64,14 @@ public class Enemy : Entity
 
     private void UpdateCountOfTargets()
     {
-        targetsCountInTriggerZone = detectObjects.DetectForAttack(transform.localScale.x, layer).Count();
+        targetsCountInTriggerZone = detectObjects.DetectForAttack(detectRange, layer).Count();
     }
 
     protected IEnumerator CollisionCheck()
     {
         while (targetsCountInTriggerZone != 0)
         {
-            foreach (Collider2D foudedTarget in detectObjects.DetectForAttack(transform.localScale.x, layer))
+            foreach (Collider2D foudedTarget in detectObjects.DetectForAttack(detectRange, layer))
             {
 
                 if (foudedTarget.gameObject.layer == 6 || foudedTarget.gameObject.layer == 9)

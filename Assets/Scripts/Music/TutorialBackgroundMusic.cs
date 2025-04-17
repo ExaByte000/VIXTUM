@@ -6,7 +6,7 @@ public static class TutorialBackgroundMusic
     private static FMOD.Studio.EventInstance musicInstance;
     static TutorialBackgroundMusic()
     {
-        musicInstance = RuntimeManager.CreateInstance("event:/TutorialMusic");
+        musicInstance = RuntimeManager.CreateInstance("event:/Tutorial_Music");
     }
 
     public static void Play()
