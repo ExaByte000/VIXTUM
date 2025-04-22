@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 0823e89417b5c624c9b93b0f87188697
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6628147056506050416
+    second: StopRunAnimFilled_0
+  - first:
+      213: 8351669150236847459
+    second: StopRunAnimFilled_1
+  - first:
+      213: 439802910784822397
+    second: StopRunAnimFilled_2
+  - first:
+      213: 6234619659562921290
+    second: StopRunAnimFilled_3
+  - first:
+      213: -5556346269001495804
+    second: StopRunAnimFilled_4
+  - first:
+      213: -1589697663103371576
+    second: StopRunAnimFilled_5
+  - first:
+      213: 782643949661089529
+    second: StopRunAnimFilled_6
+  - first:
+      213: 4875967332561026343
+    second: StopRunAnimFilled_7
+  - first:
+      213: 7261010004177704887
+    second: StopRunAnimFilled_8
+  - first:
+      213: 7889858267165693588
+    second: StopRunAnimFilled_9
+  - first:
+      213: 2362303745701228646
+    second: StopRunAnimFilled_10
+  - first:
+      213: 3987639161007848253
+    second: StopRunAnimFilled_11
+  - first:
+      213: 9130869918919438083
+    second: StopRunAnimFilled_12
+  - first:
+      213: 5337288781297439121
+    second: StopRunAnimFilled_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StopRunAnimFilled_0
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 129
+        width: 978
+        height: 1011
+      alignment: 9
+      pivot: {x: 0.8597921, y: 0.7643643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077181661a8ebfb50800000000000000
+      internalID: 6628147056506050416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_1
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 156
+        width: 932
+        height: 984
+      alignment: 9
+      pivot: {x: 0.86310834, y: 0.7579396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36da475d7d617e370800000000000000
+      internalID: 8351669150236847459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_4
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 153
+        width: 938
+        height: 989
+      alignment: 9
+      pivot: {x: 0.8670269, y: 0.75488865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b4913d184e3e2b0800000000000000
+      internalID: -5556346269001495804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_7
+      rect:
+        serializedVersion: 2
+        x: 4499
+        y: 160
+        width: 1147
+        height: 978
+      alignment: 9
+      pivot: {x: 0.7035588, y: 0.7548514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d75b9747aeaa340800000000000000
+      internalID: 4875967332561026343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_8
+      rect:
+        serializedVersion: 2
+        x: 5811
+        y: 149
+        width: 1087
+        height: 985
+      alignment: 9
+      pivot: {x: 0.7519536, y: 0.7530404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7d199d02a44c460800000000000000
+      internalID: 7261010004177704887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_9
+      rect:
+        serializedVersion: 2
+        x: 7300
+        y: 161
+        width: 957
+        height: 976
+      alignment: 9
+      pivot: {x: 0.8654446, y: 0.75638306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496179eaa486e7d60800000000000000
+      internalID: 7889858267165693588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StopRunAnimFilled_10
+      rect:
+        serializedVersion: 2
+        x: 8707
+        y: 151
+        width: 934
+        height: 977
+      alignment: 9
+      pivot: {x: 0.86706096, y: 0.7500705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660b81e9db698c020800000000000000
+      internalID: 2362303745701228646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e0055e61112511c45ab0177fbefb1306
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      StopRunAnimFilled_11: 1875659565
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
