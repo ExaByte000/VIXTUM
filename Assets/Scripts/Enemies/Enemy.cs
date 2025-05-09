@@ -12,12 +12,14 @@ public class Enemy : Entity
 
     public override void TakeDamage(float damage)
     {
+        Debug.Log("Враг получил урон");
         health -= damage;
         if (health <= 0) Die();
     }
 
     protected override void Die()
     {
+        Debug.Log("Враг умер");
         Destroy(gameObject);
     }
 

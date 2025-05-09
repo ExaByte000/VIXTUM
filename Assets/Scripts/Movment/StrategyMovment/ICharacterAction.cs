@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface ICharacterMovement
+public interface ICharacterAction
 {
     void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed);
     void ActionLogic();

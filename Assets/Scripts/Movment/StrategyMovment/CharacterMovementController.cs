@@ -6,21 +6,21 @@ using UnityEngine;
 public class CharacterMovementController : MonoBehaviour
 {
     [SerializeField] private MonoBehaviour inputSourceMono;
-    private ICommandSource inputSource;
+    private ICommandMovmentSource inputSource;
 
     [SerializeField] private List<MonoBehaviour> strategiesMono;
-    private List<ICharacterMovement> strategies;
+    private List<ICharacterAction> strategies;
 
-    private ICharacterMovement activeStrategy;
+    private ICharacterAction activeStrategy;
 
     private void Awake()
     {
-        inputSource = inputSourceMono as ICommandSource;
-        strategies = new List<ICharacterMovement>();
+        inputSource = inputSourceMono as ICommandMovmentSource;
+        strategies = new List<ICharacterAction>();
         foreach (var monoBehaviour in strategiesMono)
         {
             
-            if (monoBehaviour is ICharacterMovement movement)
+            if (monoBehaviour is ICharacterAction movement)
             {
                 strategies.Add(movement);
                
@@ -50,7 +50,6 @@ public class CharacterMovementController : MonoBehaviour
     private void FixedUpdate()
     {
             activeStrategy?.ActionLogic();
-        //Debug.Log(activeStrategy);
         
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Jump : MovmentBase, ICharacterMovement
+public class Jump : MovmentBase
 {
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask groundLayer;
@@ -16,16 +16,16 @@ public class Jump : MovmentBase, ICharacterMovement
     public bool JumpReqest { get { return jumpRequest; } }
     public bool IsGrounded { get { return isGrounded; } }
 
-    public bool WantsControl => jumpRequest;
+    public override bool WantsControl => jumpRequest;
 
-    public int Priority => 2;
+    public override int Priority => 2;
 
     protected override void Awake()
     {
         base.Awake();
         boxCollider = GetComponentInParent<CapsuleCollider2D>();
     }
-    public void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
+    public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
         if (jumpPressed)
         {
@@ -36,7 +36,7 @@ public class Jump : MovmentBase, ICharacterMovement
         
     }
 
-    public void ActionLogic()
+    public override void ActionLogic()
     {
         if (jumpRequest && isGrounded)
         {

@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 03929313dac4d064594dc52c65d5056f
+guid: cd0ff14429b3e1a4ba3c1c2fd3b03ad5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7850026957550372343
-    second: Roof_0
+      213: -2936388762408323201
+    second: DashAnim_0
   - first:
-      213: -7644597623297819340
-    second: Roof_1
-  - first:
-      213: -8911611046186920078
-    second: Roof_2
+      213: -7591500120265088638
+    second: DashAnim_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,67 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roof_0
+      name: DashAnim_0
       rect:
         serializedVersion: 2
-        x: 288
-        y: 1713
-        width: 4063
-        height: 909
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 280
+        y: 257
+        width: 1275
+        height: 724
+      alignment: 9
+      pivot: {x: 0.87278265, y: 0.9389669}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90a38f5c21a1f0390800000000000000
-      internalID: -7850026957550372343
+      spriteID: f77f33e6af9df37d0800000000000000
+      internalID: -2936388762408323201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Roof_1
+      name: DashAnim_1
       rect:
         serializedVersion: 2
-        x: 5816
-        y: 1879
-        width: 2793
-        height: 743
+        x: 780
+        y: 231
+        width: 6
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43db984e6fee8e590800000000000000
-      internalID: -7644597623297819340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Roof_2
-      rect:
-        serializedVersion: 2
-        x: 10498
-        y: 1656
-        width: 5191
-        height: 966
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 277d49f18f8935480800000000000000
-      internalID: -8911611046186920078
+      spriteID: 281a343bcd295a690800000000000000
+      internalID: -7591500120265088638
       vertices: []
       indices: 
       edges: []
@@ -188,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9125645d5dc63a146a7296fdc36c513d
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Roof_0: -7850026957550372343
-      Roof_1: -7644597623297819340
-      Roof_2: -8911611046186920078
+      DashAnim_0: -2936388762408323201
+      DashAnim_1: -7591500120265088638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

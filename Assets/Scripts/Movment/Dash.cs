@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class Dash : MovmentBase, ICharacterMovement
+public class Dash : MovmentBase
 {
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
@@ -16,15 +16,15 @@ public class Dash : MovmentBase, ICharacterMovement
     private float moveInput;
     private float lastMoveInput;
 
-    public int Priority => 3;
-    public bool WantsControl => IsDashing;
+    public override int Priority => 3;
+    public override bool WantsControl => IsDashing;
 
     public bool IsDashing {  get { return isDashing; } }
     public float DashDuration {  get { return dashDuration; } }
 
     
 
-    public void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
+    public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
         this.moveInput = moveInput;
         if (moveInput != 0) lastMoveInput = moveInput;
@@ -37,7 +37,7 @@ public class Dash : MovmentBase, ICharacterMovement
         }
     }
 
-    public void ActionLogic()
+    public override void ActionLogic()
     {
         if (isDashing)
         {

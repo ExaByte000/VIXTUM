@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class Idle : MovmentBase, ICharacterMovement
+public class Idle : MovmentBase
 {
-    public bool WantsControl => true;
+    public override bool WantsControl => true;
 
-    public int Priority => 0;
+    public override int Priority => 0;
 
-    public void ActionLogic()
+    public override void ActionLogic()
     {
         rb.linearVelocityX = 0f;
     }
 
-    public void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
+    public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
         return;
     }

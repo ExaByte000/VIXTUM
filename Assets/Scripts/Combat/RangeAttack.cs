@@ -1,32 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
-//public class RangeAttack : Attack
-//{
+public class RangeAttack : Attack
+{
+    private Vector2 origin;
+    private Vector2 direction;
 
-//    Vector2 origin;
-//    Vector2 direction;
-//    private void Start()
-//    {
-//        actionType = ActionType.RangeAttack;
-//        range = Mathf.Infinity;
-//    }
-//    public override void Execute()
-//    {
-//        base.Execute();
-//        RaycastHit2D hitInfo = Physics2D.Raycast(origin, direction - origin, range, enemyLayer);
+    private void Start()
+    {
+        //actionType = ActionType.RangeAttack;
+        origin = new();
+        direction = new();
+        range = Mathf.Infinity;
+    }
 
-//        if (hitInfo.collider != null)
-//        {
-//            hitInfo.collider.GetComponent<Enemy>().TakeDamage(actionType);
-//        }
-//    }
-//    private void Update()
-//    {
-//        origin = attackPoint.transform.position;
+    public override int Priority => 2;
 
-//        direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-//        Debug.DrawRay(origin, direction-origin, Color.red);
-//    }
-//}
+    public override void ActionLogic()
+    {
+        RaycastHit2D hitInfo = Physics2D.Raycast(origin, direction - origin, range, enemyLayer);
+
+        if (hitInfo.collider != null)
+        {
+            hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+        }
+        isAttacking = false;
+    }
+
+    public override void ActionRequest(float moveInput, bool meleeAttack, bool rangeAttack)
+    {
+        if (rangeAttack)
+        {
+            isAttacking = true;
+        }
+    }
+
+    private void Update()
+    {
+        origin = attackPoint.transform.position;
+
+        direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Debug.DrawRay(origin, (direction - origin)*1000f, Color.red);
+    }
+
+    
+
+}

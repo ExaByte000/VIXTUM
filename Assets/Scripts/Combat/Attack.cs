@@ -2,33 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Attack : MonoBehaviour
+public abstract class Attack : MonoBehaviour, ICharacterAction
 {
-    [SerializeField] protected int points;
+    [SerializeField] protected float range;
     [SerializeField] protected float damage;
-    public float cooldown;
+    [SerializeField] protected Transform attackPoint;
     [SerializeField] protected LayerMask enemyLayer;
-    public GameObject attackPoint;
-    public float range;
-    [SerializeField] protected ActionType actionType;
+    
+    protected bool isAttacking = false;
+    public bool WantsControl => isAttacking;
 
-    public bool IsOnCooldown { get; private set; }
+    public abstract int Priority { get; }
 
-    [System.Obsolete]
-    public virtual void Execute()
-    {
-        FindObjectOfType<ComboSystem>().RegisterAttack(actionType);
-    }
+    public abstract void ActionLogic();
 
-    protected virtual void Cancel()
-    {
-        
-    }
-
-    protected IEnumerator CooldownRoutine()
-    {
-        IsOnCooldown = true;
-        yield return new WaitForSeconds(cooldown);
-        IsOnCooldown = false;
-    }
+    public abstract void ActionRequest(float moveInput, bool meleeAttack, bool rangeAttack);
 }

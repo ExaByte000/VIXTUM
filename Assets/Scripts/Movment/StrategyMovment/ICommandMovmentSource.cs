@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface ICommandSource
+public interface ICommandMovmentSource
 {
     float GetMoveInput();
     bool GetJumpPressed();

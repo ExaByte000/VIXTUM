@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerInputSource : MonoBehaviour, ICommandSource
+public class PlayerInputMovmentSource : MonoBehaviour, ICommandMovmentSource
 {
     public bool GetDashPressed() => Input.GetButtonDown("Dash");
 

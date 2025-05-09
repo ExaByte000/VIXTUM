@@ -24,21 +24,21 @@ public class DetectObjects : MonoBehaviour
 
     
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        // Раскомментируйте для отладки
-        //GUIStyle style = new GUIStyle();
-        //style.normal.textColor = Color.white;
-        //style.fontSize = 20;
-        //style.alignment = TextAnchor.UpperLeft;
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.green;
+    //    // Раскомментируйте для отладки
+    //    //GUIStyle style = new GUIStyle();
+    //    //style.normal.textColor = Color.white;
+    //    //style.fontSize = 20;
+    //    //style.alignment = TextAnchor.UpperLeft;
 
-        Gizmos.DrawWireCube(transform.position, rangeForGUIBox);
-        Gizmos.DrawWireSphere(transform.position, rangeForGUICircle);
+    //    Gizmos.DrawWireCube(transform.position, rangeForGUIBox);
+    //    Gizmos.DrawWireSphere(transform.position, rangeForGUICircle);
 
-        //GUI.Label(new Rect(10, 10, 500, 30), $"Префабы для спавна: {ListPrefabsForSpawn.Count}", style);
-        //GUI.Label(new Rect(10, 40, 500, 30), $"Префабы для респавна: {prefabListForRespawn.Count}", style);
-        //GUI.Label(new Rect(10, 70, 500, 30), $"Коробки на сцене: {spawnedBoxes.Count}", style);
-        //GUI.Label(new Rect(10, 100, 500, 30), $"Меню открыто: {isMenuOpen}", style);
-    }
+    //    //GUI.Label(new Rect(10, 10, 500, 30), $"Префабы для спавна: {ListPrefabsForSpawn.Count}", style);
+    //    //GUI.Label(new Rect(10, 40, 500, 30), $"Префабы для респавна: {prefabListForRespawn.Count}", style);
+    //    //GUI.Label(new Rect(10, 70, 500, 30), $"Коробки на сцене: {spawnedBoxes.Count}", style);
+    //    //GUI.Label(new Rect(10, 100, 500, 30), $"Меню открыто: {isMenuOpen}", style);
+    //}
 }
