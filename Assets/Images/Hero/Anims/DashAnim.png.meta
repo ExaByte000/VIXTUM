@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -2936388762408323201
     second: DashAnim_0
-  - first:
-      213: -7591500120265088638
-    second: DashAnim_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,12 +116,12 @@ TextureImporter:
       name: DashAnim_0
       rect:
         serializedVersion: 2
-        x: 280
-        y: 257
-        width: 1275
-        height: 724
+        x: 23
+        y: 141
+        width: 1300
+        height: 734
       alignment: 9
-      pivot: {x: 0.87278265, y: 0.9389669}
+      pivot: {x: 0.88713586, y: 0.9393321}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,33 +134,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: DashAnim_1
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 231
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 281a343bcd295a690800000000000000
-      internalID: -7591500120265088638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9125645d5dc63a146a7296fdc36c513d
+    spriteID: fd384bb85792b1c46a33387ce63306c4
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +149,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       DashAnim_0: -2936388762408323201
-      DashAnim_1: -7591500120265088638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
