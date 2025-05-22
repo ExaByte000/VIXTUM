@@ -7,6 +7,7 @@ public class Hero : Entity
     public override void TakeDamage(float damage)
     {
         health -= damage*armorMultiplire;
+        Debug.Log($"{name} θμεες {health} υο");
         if (health <= 0)
         {
             Die();

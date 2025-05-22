@@ -12,14 +12,14 @@ public class Enemy : Entity
 
     public override void TakeDamage(float damage)
     {
-        Debug.Log("Враг получил урон");
         health -= damage;
+
+        Debug.Log($"{name} имеет {health} хп");
         if (health <= 0) Die();
     }
 
     protected override void Die()
     {
-        Debug.Log("Враг умер");
         Destroy(gameObject);
     }
 
@@ -35,71 +35,71 @@ public class Enemy : Entity
     int targetsCountInTriggerZone;
     //private Coroutine check;
 
-    protected virtual void Start()
-    {
-        //rb = GetComponent<Rigidbody2D>();
-        detectObjects = GetComponentInChildren<DetectObjects>();
-        //movement = new(speed, rb);
-    }
+    //protected virtual void Start()
+    //{
+    //    //rb = GetComponent<Rigidbody2D>();
+    //    detectObjects = GetComponentInChildren<DetectObjects>();
+    //    //movement = new(speed, rb);
+    //}
 
-    protected virtual void FixedUpdate()
-    {
-        //float moveInput = target.position.x - transform.position.x;
-        //movement.Move(moveInput);
-    }
+    //protected virtual void FixedUpdate()
+    //{
+    //    //float moveInput = target.position.x - transform.position.x;
+    //    //movement.Move(moveInput);
+    //}
 
-    protected virtual void Update()
-    {
-        if (detectObjects.DetectForAttack(detectRange, layer).Count() != targetsCountInTriggerZone)
-        {
+    //protected virtual void Update()
+    //{
+    //    if (detectObjects.DetectForAttack(detectRange, layer).Count() != targetsCountInTriggerZone)
+    //    {
 
-            UpdateCountOfTargets();
-            //if (check != null)
-            //{
-            //    StopCoroutine(check);
-            //}
-            //check = StartCoroutine("CollisionCheck");
-            Debug.Log("Цель найдена");
+    //        UpdateCountOfTargets();
+    //        //if (check != null)
+    //        //{
+    //        //    StopCoroutine(check);
+    //        //}
+    //        //check = StartCoroutine("CollisionCheck");
+    //        Debug.Log("Цель найдена");
 
-        }
-    }
+    //    }
+    //}
 
-    private void UpdateCountOfTargets()
-    {
-        targetsCountInTriggerZone = detectObjects.DetectForAttack(detectRange, layer).Count();
-    }
+    //private void UpdateCountOfTargets()
+    //{
+    //    targetsCountInTriggerZone = detectObjects.DetectForAttack(detectRange, layer).Count();
+    //}
 
-    protected IEnumerator CollisionCheck()
-    {
-        while (targetsCountInTriggerZone != 0)
-        {
-            foreach (Collider2D foudedTarget in detectObjects.DetectForAttack(detectRange, layer))
-            {
+    //protected IEnumerator CollisionCheck()
+    //{
+    //    while (targetsCountInTriggerZone != 0)
+    //    {
+    //        foreach (Collider2D foudedTarget in detectObjects.DetectForAttack(detectRange, layer))
+    //        {
 
-                if (foudedTarget.gameObject.layer == 6 || foudedTarget.gameObject.layer == 9)
-                {
-                    //foudedTarget.GetComponent<Entity>().TakeDamage();
-                }
-            }
+    //            if (foudedTarget.gameObject.layer == 6 || foudedTarget.gameObject.layer == 9)
+    //            {
+    //                //foudedTarget.GetComponent<Entity>().TakeDamage();
+    //            }
+    //        }
 
-            yield return new WaitForSeconds(1);
-        }
-    }
+    //        yield return new WaitForSeconds(1);
+    //    }
+    //}
 
-    public void TakeDamage(ActionType attackType)
-    {
-        //Health--;
-        //if (Health <= 0) Die(attackType);
-    }
-    protected void Die(ActionType attackType)
-    {
-        if (attackType == (ActionType)1 || attackType == 0)
-        {
-            Debug.Log("Убит обычной атакой");
-            //scoreSystem.Score = 10;
-            //scoreSystem.ComboCounter++;
-        }
-        Die();
-    }
+    //public void TakeDamage(ActionType attackType)
+    //{
+    //    //Health--;
+    //    //if (Health <= 0) Die(attackType);
+    //}
+    //protected void Die(ActionType attackType)
+    //{
+    //    if (attackType == (ActionType)1 || attackType == 0)
+    //    {
+    //        Debug.Log("Убит обычной атакой");
+    //        //scoreSystem.Score = 10;
+    //        //scoreSystem.ComboCounter++;
+    //    }
+    //    Die();
+    //}
 
 }

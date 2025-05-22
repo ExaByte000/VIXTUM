@@ -10,6 +10,7 @@ public abstract class Entity : MonoBehaviour
     protected abstract void Die();
 
 
+
     //{
     //    if (this is Hero || name == "House")
     //    {

@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
@@ -5,40 +7,84 @@ using UnityEngine;
 
 public class DetectObjects : MonoBehaviour
 {
-    private float rangeForGUICircle;
-    private Vector2 rangeForGUIBox;
-    public Collider2D[] Detect(float range, LayerMask layer)
+    [SerializeField] private float rangeForFollow;
+    [SerializeField] private float rangeForAttack;
+    [SerializeField] private LayerMask layer;
+    [SerializeField] private float attackDelay; //переделать когда будут анимации
+    private Coroutine coroutine; //переделать когда будут анимации
+
+
+
+    public static Action<float> EnemyMovmentDetectorEvent;
+    public static Action<bool> EnemyAttackDetectorEvent;
+    private void DetectForFollow()
     {
-        rangeForGUICircle = range;
-        Collider2D[] findObjects = Physics2D.OverlapCircleAll(transform.position, range, layer);
-        return findObjects;
+        Collider2D[] followObjects = Physics2D.OverlapCircleAll(transform.position, rangeForFollow, layer);
+        if(followObjects.Length != 0)
+        {
+            EnemyMovmentDetectorEvent?.Invoke(followObjects[0].transform.position.x - transform.position.x);
+        }
+        else
+        {
+            EnemyMovmentDetectorEvent?.Invoke(0f);
+        }
         
     }
-    public Collider2D[] DetectForAttack(float range, LayerMask layer)
+    private void DetectForAttack()
     {
-        rangeForGUIBox = new(range, range);
-        Collider2D[] currentObjects = Physics2D.OverlapBoxAll(transform.position, new(range, range), 0, layer.value);
-        return currentObjects;
+        Collider2D[] attackObjects = Physics2D.OverlapCircleAll(transform.position, rangeForAttack, layer);
+        if(attackObjects.Length != 0)
+        {
+            Debug.Log("Объект в зоне атаки");
+            if(coroutine == null)
+            {
+                Debug.Log("Запускаем куротину");
+                EnemyAttackDetectorEvent?.Invoke(true);
+                coroutine = StartCoroutine(nameof(AttackDealyRoutine));
+            }
+        }
+        else
+        {
+            Debug.Log("Объект вне зоны атаки");
+            if (coroutine != null)
+            {
+                Debug.Log("Остонавливаем куротину");
+                StopCoroutine(coroutine);
+                coroutine = null;
+            }
+            EnemyAttackDetectorEvent?.Invoke(false);
+        }
 
     }
 
-    
+    private void Update()
+    {
+        DetectForFollow();
+        DetectForAttack();
+    }
 
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.green;
-    //    // Раскомментируйте для отладки
-    //    //GUIStyle style = new GUIStyle();
-    //    //style.normal.textColor = Color.white;
-    //    //style.fontSize = 20;
-    //    //style.alignment = TextAnchor.UpperLeft;
+    /// <summary>
+    /// переделать когда будут анимации
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator AttackDealyRoutine()
+    {
+        while (true)
+        {
+            
+            EnemyAttackDetectorEvent?.Invoke(false);
+            yield return new WaitForSeconds(attackDelay);
+            EnemyAttackDetectorEvent?.Invoke(true);
+            yield return null;
+        }
+    }
 
-    //    Gizmos.DrawWireCube(transform.position, rangeForGUIBox);
-    //    Gizmos.DrawWireSphere(transform.position, rangeForGUICircle);
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
 
-    //    //GUI.Label(new Rect(10, 10, 500, 30), $"Префабы для спавна: {ListPrefabsForSpawn.Count}", style);
-    //    //GUI.Label(new Rect(10, 40, 500, 30), $"Префабы для респавна: {prefabListForRespawn.Count}", style);
-    //    //GUI.Label(new Rect(10, 70, 500, 30), $"Коробки на сцене: {spawnedBoxes.Count}", style);
-    //    //GUI.Label(new Rect(10, 100, 500, 30), $"Меню открыто: {isMenuOpen}", style);
-    //}
+        Gizmos.DrawWireSphere(transform.position, rangeForAttack);
+        Gizmos.DrawWireSphere(transform.position, rangeForFollow);
+
+    }
 }
