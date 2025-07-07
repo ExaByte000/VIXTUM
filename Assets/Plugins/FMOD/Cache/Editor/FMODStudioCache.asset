@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.bank
   Name: Tutorial
   StudioPath: bank:/Tutorial
-  lastModified: 638805215896010633
+  lastModified: 638805287896010633
   FileSizes: []
   Exists: 1
 --- !u!114 &-4845978270620849043
@@ -141,7 +141,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.strings.bank
   Name: Tutorial.strings
   StudioPath: bank:/Tutorial.strings
-  lastModified: 638805215896031195
+  lastModified: 638805287896031195
   FileSizes:
   - Name: 
     Value: 1088
@@ -173,7 +173,7 @@ MonoBehaviour:
   - {fileID: -6244394012098743890}
   StringsBanks:
   - {fileID: -806125834040652772}
-  cacheTime: 638805215896031195
+  cacheTime: 638805287896031195
   cacheVersion: 131846
 --- !u!114 &3822073522588812323
 MonoBehaviour:

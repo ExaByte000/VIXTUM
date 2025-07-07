@@ -1,8 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
+using System;
 
 public class Hero : Entity
 {
+    public static Action<int> Dead;
+    [SerializeField] private int SceneNumber = 0;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     [SerializeField] private float armorMultiplire;
     public override void TakeDamage(float damage)
     {
@@ -16,7 +26,7 @@ public class Hero : Entity
 
     protected override void Die()
     {
-        Destroy(gameObject);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        health = 10;
+        Dead.Invoke(SceneNumber);
     }
 }

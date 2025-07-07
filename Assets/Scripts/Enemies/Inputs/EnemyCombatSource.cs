@@ -27,7 +27,6 @@ public class EnemyCombatSource : MonoBehaviour, ICommandCombatSource
 
     private void GetInputForMelee(bool input)
     {
-        Debug.Log(input);
         this.input = input;
     }
 }

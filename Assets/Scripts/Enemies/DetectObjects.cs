@@ -35,20 +35,16 @@ public class DetectObjects : MonoBehaviour
         Collider2D[] attackObjects = Physics2D.OverlapCircleAll(transform.position, rangeForAttack, layer);
         if(attackObjects.Length != 0)
         {
-            Debug.Log("Объект в зоне атаки");
             if(coroutine == null)
             {
-                Debug.Log("Запускаем куротину");
                 EnemyAttackDetectorEvent?.Invoke(true);
                 coroutine = StartCoroutine(nameof(AttackDealyRoutine));
             }
         }
         else
         {
-            Debug.Log("Объект вне зоны атаки");
             if (coroutine != null)
             {
-                Debug.Log("Остонавливаем куротину");
                 StopCoroutine(coroutine);
                 coroutine = null;
             }
