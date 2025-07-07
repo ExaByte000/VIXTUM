@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 577ae4c0eb0e67a4aafae7609bc43804
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -250194241405044502
+    second: CloseWallUP_0
+  - first:
+      213: -971938890671527796
+    second: CloseWallUP_1
+  - first:
+      213: -6541734398641603945
+    second: CloseWallUP_2
+  - first:
+      213: 7258459384781451696
+    second: CloseWallUP_3
+  - first:
+      213: -2946314114989110540
+    second: CloseWallUP_4
+  - first:
+      213: -6972197343108243913
+    second: CloseWallUP_5
+  - first:
+      213: 3903154579770277075
+    second: CloseWallUP_6
+  - first:
+      213: 3610269201780895224
+    second: CloseWallUP_7
+  - first:
+      213: 4837390353927983057
+    second: CloseWallUP_8
+  - first:
+      213: -4937177101715135859
+    second: CloseWallUP_9
+  - first:
+      213: -3875105061992886402
+    second: CloseWallUP_10
+  - first:
+      213: 7225101588671396150
+    second: CloseWallUP_11
+  - first:
+      213: -5977186392258420503
+    second: CloseWallUP_12
+  - first:
+      213: -2733889112655811060
+    second: CloseWallUP_13
+  - first:
+      213: 3027563860823896334
+    second: CloseWallUP_14
+  - first:
+      213: -5721253043121676375
+    second: CloseWallUP_15
+  - first:
+      213: 2634405654101962771
+    second: CloseWallUP_16
+  - first:
+      213: -2000247925332650473
+    second: CloseWallUP_17
+  - first:
+      213: 8137317381489244101
+    second: CloseWallUP_18
+  - first:
+      213: -7051468962363542991
+    second: CloseWallUP_19
+  - first:
+      213: 9149399782003527073
+    second: CloseWallUP_20
+  - first:
+      213: 8013678206056901303
+    second: CloseWallUP_21
+  - first:
+      213: 581824432850152003
+    second: CloseWallUP_22
+  - first:
+      213: -3532811188843473865
+    second: CloseWallUP_23
+  - first:
+      213: -6052815492968630435
+    second: CloseWallUP_24
+  - first:
+      213: 1905962095232105862
+    second: CloseWallUP_25
+  - first:
+      213: -4457217882377297407
+    second: CloseWallUP_26
+  - first:
+      213: -3244778228087609039
+    second: CloseWallUP_27
+  - first:
+      213: -6656195958906137324
+    second: CloseWallUP_28
+  - first:
+      213: -4960287265965766896
+    second: CloseWallUP_29
+  - first:
+      213: 7904333172036922041
+    second: CloseWallUP_30
+  - first:
+      213: 1531210440536766113
+    second: CloseWallUP_31
+  - first:
+      213: -8998813490979252678
+    second: CloseWallUP_32
+  - first:
+      213: -1600965130178381246
+    second: CloseWallUP_33
+  - first:
+      213: 1321702559980193462
+    second: CloseWallUP_34
+  - first:
+      213: 7758375746439312112
+    second: CloseWallUP_35
+  - first:
+      213: 4821461304880180074
+    second: CloseWallUP_36
+  - first:
+      213: -5954632621290344509
+    second: CloseWallUP_37
+  - first:
+      213: -2671616969824200267
+    second: CloseWallUP_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 1722, y: 608, z: 798, w: 290}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CloseWallUP_0
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 203
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8343cb9a1278cf0800000000000000
+      internalID: -250194241405044502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_1
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 213
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88e22e7abaf282f0800000000000000
+      internalID: -971938890671527796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_2
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 222
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a730a59371735a0800000000000000
+      internalID: -6541734398641603945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_3
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 228
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1bf7e7a5a3bb460800000000000000
+      internalID: 7258459384781451696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_4
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 246
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faca533ce69c17d0800000000000000
+      internalID: -2946314114989110540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_5
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 272
+        width: 74
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e5c1ce477cd3f90800000000000000
+      internalID: -6972197343108243913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_6
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 319
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc75a6196aca2630800000000000000
+      internalID: 3903154579770277075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_7
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 327
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdeea306b04a1230800000000000000
+      internalID: 3610269201780895224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_8
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 332
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df47c5b5ecd12340800000000000000
+      internalID: 4837390353927983057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_9
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 340
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82a313959f9b7bb0800000000000000
+      internalID: -4937177101715135859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_10
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 347
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f88903a7cd83ac0800000000000000
+      internalID: -3875105061992886402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_11
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 216
+        width: 913
+        height: 715
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6397eda5d97b44460800000000000000
+      internalID: 7225101588671396150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_12
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 185
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0632d05a4cc0da0800000000000000
+      internalID: -5977186392258420503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_13
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 196
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ea7d836564f0ad0800000000000000
+      internalID: -2733889112655811060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_14
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 47
+        width: 14
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01f73b6a41140a20800000000000000
+      internalID: 3027563860823896334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_15
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 172
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af1c967ba60a90b0800000000000000
+      internalID: -5721253043121676375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 179
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31037071cf94f8420800000000000000
+      internalID: 2634405654101962771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_17
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 164
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716d5d31c11bd34e0800000000000000
+      internalID: -2000247925332650473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_18
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 168
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7374c8b0f8de070800000000000000
+      internalID: 8137317381489244101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_19
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 155
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132f0a9c656242e90800000000000000
+      internalID: -7051468962363542991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_20
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 159
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad4b5a40a239fe70800000000000000
+      internalID: 9149399782003527073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 130
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baaf40cedd463f60800000000000000
+      internalID: 8013678206056901303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_22
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 147
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a2da13d3e031800800000000000000
+      internalID: 581824432850152003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_23
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 109
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734957ef0fee8fec0800000000000000
+      internalID: -3532811188843473865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_24
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 117
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57bf9ad064100ca0800000000000000
+      internalID: -6052815492968630435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_25
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 93
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d3ba96d66537a10800000000000000
+      internalID: 1905962095232105862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_26
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 104
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102e16a83f7c422c0800000000000000
+      internalID: -4457217882377297407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 77
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139aae3a46b38f2d0800000000000000
+      internalID: -3244778228087609039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 87
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415520a9a0170a3a0800000000000000
+      internalID: -6656195958906137324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_29
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 50
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01787382305892bb0800000000000000
+      internalID: -4960287265965766896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_30
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 60
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bae8991425d1bd60800000000000000
+      internalID: 7904333172036922041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_31
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 29
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6309078c3ff3510800000000000000
+      internalID: 1531210440536766113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_32
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 39
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a365036cecacd1380800000000000000
+      internalID: -8998813490979252678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_33
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a3ee542ba38c9e0800000000000000
+      internalID: -1600965130178381246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_34
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 18
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b60852c971a75210800000000000000
+      internalID: 1321702559980193462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_35
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f27580c2a94bab60800000000000000
+      internalID: 7758375746439312112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_36
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 0
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6baca7f28549e240800000000000000
+      internalID: 4821461304880180074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_37
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf29001e25ec5da0800000000000000
+      internalID: -5954632621290344509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloseWallUP_38
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 0
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b919b155828cead0800000000000000
+      internalID: -2671616969824200267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CloseWallUP_0: -250194241405044502
+      CloseWallUP_1: -971938890671527796
+      CloseWallUP_10: -3875105061992886402
+      CloseWallUP_11: 7225101588671396150
+      CloseWallUP_12: -5977186392258420503
+      CloseWallUP_13: -2733889112655811060
+      CloseWallUP_14: 3027563860823896334
+      CloseWallUP_15: -5721253043121676375
+      CloseWallUP_16: 2634405654101962771
+      CloseWallUP_17: -2000247925332650473
+      CloseWallUP_18: 8137317381489244101
+      CloseWallUP_19: -7051468962363542991
+      CloseWallUP_2: -6541734398641603945
+      CloseWallUP_20: 9149399782003527073
+      CloseWallUP_21: 8013678206056901303
+      CloseWallUP_22: 581824432850152003
+      CloseWallUP_23: -3532811188843473865
+      CloseWallUP_24: -6052815492968630435
+      CloseWallUP_25: 1905962095232105862
+      CloseWallUP_26: -4457217882377297407
+      CloseWallUP_27: -3244778228087609039
+      CloseWallUP_28: -6656195958906137324
+      CloseWallUP_29: -4960287265965766896
+      CloseWallUP_3: 7258459384781451696
+      CloseWallUP_30: 7904333172036922041
+      CloseWallUP_31: 1531210440536766113
+      CloseWallUP_32: -8998813490979252678
+      CloseWallUP_33: -1600965130178381246
+      CloseWallUP_34: 1321702559980193462
+      CloseWallUP_35: 7758375746439312112
+      CloseWallUP_36: 4821461304880180074
+      CloseWallUP_37: -5954632621290344509
+      CloseWallUP_38: -2671616969824200267
+      CloseWallUP_4: -2946314114989110540
+      CloseWallUP_5: -6972197343108243913
+      CloseWallUP_6: 3903154579770277075
+      CloseWallUP_7: 3610269201780895224
+      CloseWallUP_8: 4837390353927983057
+      CloseWallUP_9: -4937177101715135859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

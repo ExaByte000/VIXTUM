@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: cdb25d6064f9b6d4494c7dae240938eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4820291223290000655
+    second: SpidersheepAnim_0
+  - first:
+      213: -8064532837678262308
+    second: SpidersheepAnim_1
+  - first:
+      213: -1699730557656260166
+    second: SpidersheepAnim_2
+  - first:
+      213: -4334770229501668869
+    second: SpidersheepAnim_3
+  - first:
+      213: 4356644448342641645
+    second: SpidersheepAnim_4
+  - first:
+      213: -7323372810310983710
+    second: SpidersheepAnim_5
+  - first:
+      213: -979060737247686106
+    second: SpidersheepAnim_6
+  - first:
+      213: 7945455436893861496
+    second: SpidersheepAnim_7
+  - first:
+      213: 2680011511489442010
+    second: SpidersheepAnim_8
+  - first:
+      213: -1230403600666477895
+    second: SpidersheepAnim_9
+  - first:
+      213: 8065808905325943328
+    second: SpidersheepAnim_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpidersheepAnim_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 81
+        width: 1006
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1facdd1eba2ea1db0800000000000000
+      internalID: -4820291223290000655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_1
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 82
+        width: 963
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7d6b2ac16051090800000000000000
+      internalID: -8064532837678262308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_2
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 79
+        width: 978
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1a50930185968e0800000000000000
+      internalID: -1699730557656260166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_3
+      rect:
+        serializedVersion: 2
+        x: 3995
+        y: 78
+        width: 980
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf15d9f517dc7d3c0800000000000000
+      internalID: -4334770229501668869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_4
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 80
+        width: 937
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb04241b09e57c30800000000000000
+      internalID: 4356644448342641645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_5
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 81
+        width: 928
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efd8abda372e5a90800000000000000
+      internalID: -7323372810310983710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_6
+      rect:
+        serializedVersion: 2
+        x: 7924
+        y: 84
+        width: 892
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622d1de527da962f0800000000000000
+      internalID: -979060737247686106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_7
+      rect:
+        serializedVersion: 2
+        x: 9191
+        y: 82
+        width: 887
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87631ce7f9de34e60800000000000000
+      internalID: 7945455436893861496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_8
+      rect:
+        serializedVersion: 2
+        x: 10449
+        y: 79
+        width: 926
+        height: 568
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad039483540513520800000000000000
+      internalID: 2680011511489442010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_9
+      rect:
+        serializedVersion: 2
+        x: 11701
+        y: 78
+        width: 966
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bab9e3b17abceee0800000000000000
+      internalID: -1230403600666477895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpidersheepAnim_10
+      rect:
+        serializedVersion: 2
+        x: 12957
+        y: 80
+        width: 1004
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a922407728fef60800000000000000
+      internalID: 8065808905325943328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpidersheepAnim_0: -4820291223290000655
+      SpidersheepAnim_1: -8064532837678262308
+      SpidersheepAnim_10: 8065808905325943328
+      SpidersheepAnim_2: -1699730557656260166
+      SpidersheepAnim_3: -4334770229501668869
+      SpidersheepAnim_4: 4356644448342641645
+      SpidersheepAnim_5: -7323372810310983710
+      SpidersheepAnim_6: -979060737247686106
+      SpidersheepAnim_7: 7945455436893861496
+      SpidersheepAnim_8: 2680011511489442010
+      SpidersheepAnim_9: -1230403600666477895
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

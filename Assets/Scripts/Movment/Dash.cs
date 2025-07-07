@@ -1,38 +1,70 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class Dash
+public class Dash : MovmentBase
 {
-    protected float _dashForce;
-    private float _dashDuration;
-    protected Rigidbody2D _rb;
-    public bool isDashing;
-    public int dashBuffer = 1;
-    public float originalGravity;
-    public ActionType actionType = ActionType.Dash;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCoolDown;
+    
+    private bool isDashing = false;
+    private bool canDash = true;
+    private float originalGravity;
+    private Coroutine dashRoutine;
+    private float moveInput;
+    private float lastMoveInput;
 
-    public Dash(float dashForce, float dashDuration, Rigidbody2D rb)
-    {
-        _dashForce = dashForce;
-        _dashDuration = dashDuration;
-        _rb = rb;
-    }
+    public override int Priority => 3;
+    public override bool WantsControl => IsDashing;
 
-    public void RequestDash()
-    {
-        isDashing = true;
-    }
+    public bool IsDashing {  get { return isDashing; } }
+    public float DashDuration {  get { return dashDuration; } }
 
-    public virtual void DashLogic()
+    
+
+    public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
-        originalGravity = _rb.gravityScale;
-        Vector2 inputDirection = new(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (inputDirection != Vector2.zero)
+        this.moveInput = moveInput;
+        if (moveInput != 0) lastMoveInput = moveInput;
+        if (canDash && dashPressed) 
         {
-            _rb.linearVelocity = inputDirection.normalized * _dashForce;
+            isDashing = true;
+            canDash = false;
+            if (dashRoutine != null) StopCoroutine(dashRoutine);
+            dashRoutine = StartCoroutine(nameof(DashRoutine));
         }
-        dashBuffer--;
     }
+
+    public override void ActionLogic()
+    {
+        if (isDashing)
+        {
+            if (moveInput == 0)
+            {
+                rb.linearVelocityX = lastMoveInput * dashForce;
+                return;
+            }
+            rb.linearVelocityX = moveInput * dashForce;
+        }
+    }
+
+    private IEnumerator DashRoutine()
+    {
+        originalGravity = rb.gravityScale;
+        rb.gravityScale = 0;
+        rb.linearVelocityY = 0f;
+        
+        yield return new WaitForSeconds(dashDuration);
+
+        isDashing = false;
+        rb.gravityScale = originalGravity;
+        rb.linearVelocityX = 0;
+
+        yield return new WaitForSeconds(dashCoolDown);
+        canDash = true;
+    }
+
 
 }

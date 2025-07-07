@@ -1,37 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class Movement
+public class Movement : MovmentBase
 {
-    private float _speed;
-    private Rigidbody2D _rb;
+    [SerializeField] private float speed;
+    private float moveInput;
+    [SerializeField] private bool isFacingRight = true;
 
-    public Movement(float speed, Rigidbody2D rb)
+    public override bool WantsControl => moveInput != 0;
+
+    public override int Priority => 1;
+
+    private void SpriteFlip()
     {
-        _speed = speed;
-        _rb = rb;
+        isFacingRight = !isFacingRight;
+
+        Transform parentTransform = transform.parent.transform.parent;
+
+        Vector3 scale = parentTransform.localScale;
+        scale.x *= -1;
+        parentTransform.localScale = scale;
     }
 
-    public virtual void HandleInput(float moveInput)
+    public override void ActionLogic()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float direction = Mathf.Clamp(moveInput, -1f, 1f);
+        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+    }
 
-        if (mousePosition.x < _rb.transform.position.x)
+    public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
+    {
+        this.moveInput = moveInput;
+        
+        if (moveInput > 0 && !isFacingRight)
         {
-            _rb.transform.localScale = new Vector3(1, 1, 1);
+            SpriteFlip();
         }
-        else if (mousePosition.x > _rb.transform.position.x)
+        else if (moveInput < 0 && isFacingRight)
         {
-            _rb.transform.localScale = new Vector3(-1, 1, 1);
+            SpriteFlip();
         }
+
     }
 
-    public virtual void Move(float moveInput)
-    {
-        _rb.linearVelocity = new Vector2(moveInput * _speed, _rb.linearVelocity.y);
-    }
 }
 
 
