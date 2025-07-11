@@ -7,11 +7,11 @@ public class EnemyCombatSource : MonoBehaviour, ICommandCombatSource
 
     private void OnEnable()
     {
-        DetectObjects.EnemyAttackDetectorEvent += GetInputForMelee;
+        SpiderSheepAnimController.EnemyAttackDetectorEvent += GetInputForMelee;
     }
     private void OnDisable()
     {
-        DetectObjects.EnemyAttackDetectorEvent -= GetInputForMelee;
+        SpiderSheepAnimController.EnemyAttackDetectorEvent -= GetInputForMelee;
     }
 
     public bool MeleeAttack()

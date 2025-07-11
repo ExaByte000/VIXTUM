@@ -16,7 +16,7 @@ public class DetectObjects : MonoBehaviour
 
 
     public static Action<float> EnemyMovmentDetectorEvent;
-    public static Action<bool> EnemyAttackDetectorEvent;
+    public static Action<bool> EnemyAnimAttackDetectorEvent;
     private void DetectForFollow()
     {
         Collider2D[] followObjects = Physics2D.OverlapCircleAll(transform.position, rangeForFollow, layer);
@@ -37,7 +37,6 @@ public class DetectObjects : MonoBehaviour
         {
             if(coroutine == null)
             {
-                EnemyAttackDetectorEvent?.Invoke(true);
                 coroutine = StartCoroutine(nameof(AttackDealyRoutine));
             }
         }
@@ -48,7 +47,7 @@ public class DetectObjects : MonoBehaviour
                 StopCoroutine(coroutine);
                 coroutine = null;
             }
-            EnemyAttackDetectorEvent?.Invoke(false);
+            EnemyAnimAttackDetectorEvent?.Invoke(false);
         }
 
     }
@@ -67,11 +66,10 @@ public class DetectObjects : MonoBehaviour
     {
         while (true)
         {
-            
-            EnemyAttackDetectorEvent?.Invoke(false);
+            EnemyAnimAttackDetectorEvent?.Invoke(true);
+            yield return new WaitForSeconds(1);
+            EnemyAnimAttackDetectorEvent?.Invoke(false);
             yield return new WaitForSeconds(attackDelay);
-            EnemyAttackDetectorEvent?.Invoke(true);
-            yield return null;
         }
     }
 
