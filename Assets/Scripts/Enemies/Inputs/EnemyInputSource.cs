@@ -6,11 +6,11 @@ public class EnemyInputSource : MonoBehaviour, ICommandMovmentSource
 
     private void OnEnable()
     {
-        DetectObjects.EnemyMovmentDetectorEvent += GetDirection;
+        EnemyDetector.EnemyMovmentDetectorEvent += GetDirection;
     }
     private void OnDisable()
     {
-        DetectObjects.EnemyMovmentDetectorEvent -= GetDirection;
+        EnemyDetector.EnemyMovmentDetectorEvent -= GetDirection;
     }
 
     public bool GetDashPressed()

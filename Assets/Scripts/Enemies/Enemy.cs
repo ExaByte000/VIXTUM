@@ -31,7 +31,7 @@ public class Enemy : Entity
     //public ScoreSystem scoreSystem;
     //protected Rigidbody2D rb;
     //protected EnemyMovement movement;
-    protected DetectObjects detectObjects;
+    protected EnemyDetector ånemyDetector;
     int targetsCountInTriggerZone;
     //private Coroutine check;
 

@@ -19,11 +19,9 @@ public class MovementController : MonoBehaviour
         strategies = new List<ICharacterAction>();
         foreach (var monoBehaviour in strategiesMono)
         {
-            
             if (monoBehaviour is ICharacterAction movement)
             {
                 strategies.Add(movement);
-               
             }
         }
     }
@@ -32,11 +30,12 @@ public class MovementController : MonoBehaviour
     {
         foreach (var strategy in strategies)
         {
-            strategy.ActionRequest(
+            strategy.ActionRequest
+            (
                 inputSource.GetMoveInput(),
                 inputSource.GetJumpPressed(),
                 inputSource.GetDashPressed()
-                );
+            );
 
         }
 
@@ -49,7 +48,6 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-            activeStrategy?.ActionLogic();
-        
+        activeStrategy?.ActionLogic();
     }
 }

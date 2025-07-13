@@ -14,12 +14,12 @@ public class SpiderSheepAnimController : MonoBehaviour
 
     private void OnEnable()
     {
-        DetectObjects.EnemyAnimAttackDetectorEvent += StartAttackAnim;
+        EnemyDetector.EnemyAnimAttackDetectorEvent += StartAttackAnim;
     }
 
     private void OnDisable()
     {
-        DetectObjects.EnemyAnimAttackDetectorEvent += StartAttackAnim;
+        EnemyDetector.EnemyAnimAttackDetectorEvent += StartAttackAnim;
     }
 
     private void Start()
