@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 public class EnemyDetector : MonoBehaviour
@@ -14,7 +15,7 @@ public class EnemyDetector : MonoBehaviour
     [SerializeField] private float retreatDistance;
 
     private Coroutine coroutine;
-    private bool isFacingRight = false;
+    [SerializeField] private bool isFacingRight = false;
     private Collider2D[] retreatObjects;
 
     public static Action<float> EnemyMovmentDetectorEvent;
@@ -31,7 +32,7 @@ public class EnemyDetector : MonoBehaviour
         }
         if (followObjects.Length != 0 && retreatObjects.Length == 0)
         {
-            EnemyMovmentDetectorEvent?.Invoke(followObjects[0].transform.position.x - attackPoint.position.x);
+            EnemyMovmentDetectorEvent?.Invoke(Mathf.Clamp(followObjects[0].transform.position.x - attackPoint.position.x, -1f,1f));
 
         }
         else
@@ -43,7 +44,7 @@ public class EnemyDetector : MonoBehaviour
 
     private void CheckForFlip(float playerToEnemy)
     {
-        if (Mathf.Abs(playerToEnemy) >= 4.8f)
+        if (Mathf.Abs(playerToEnemy) >= 4f)
         {
             bool shouldFaceRight = playerToEnemy > 0;
             if (shouldFaceRight != isFacingRight)
@@ -70,7 +71,7 @@ public class EnemyDetector : MonoBehaviour
             {
                 var retreatX = retreatObjects[0].transform.position.x;
                 var targetX = retreatX + (isFacingRight ? 5f : -5f);
-                EnemyMovmentDetectorEvent?.Invoke(targetX - transform.position.x);
+                EnemyMovmentDetectorEvent?.Invoke((targetX - transform.position.x)*2);
             }
             if (coroutine != null)
             {
@@ -86,6 +87,7 @@ public class EnemyDetector : MonoBehaviour
         retreatObjects = Physics2D.OverlapCircleAll(transform.position, retreatDistance, layer);
         DetectForFollow();
         DetectForAttack();
+
     }
 
     private IEnumerator AttackDealyRoutine()

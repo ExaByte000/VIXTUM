@@ -23,10 +23,10 @@ public class EnemyMovment : MovmentBase
 
     private void HandleFlip(bool shouldFaceRight)
     {
-        if (shouldFaceRight != isFacingRight)
-        {
+        //if (shouldFaceRight != isFacingRight)
+        //{
             SpriteFlip();
-        }
+        //}
     }
 
     private void SpriteFlip()
@@ -42,8 +42,8 @@ public class EnemyMovment : MovmentBase
 
     public override void ActionLogic()
     {
-        float direction = Mathf.Clamp(moveInput, -1f, 1f);
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+        //float direction = Mathf.Clamp(moveInput, -1f, 1f);
+        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
     }
 
     public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)

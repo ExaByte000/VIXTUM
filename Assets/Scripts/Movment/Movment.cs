@@ -26,12 +26,13 @@ public class Movement : MovmentBase
     public override void ActionLogic()
     {
         float direction = Mathf.Clamp(moveInput, -1f, 1f);
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
     }
 
     public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
         this.moveInput = moveInput;
+
         
         if (moveInput > 0 && !isFacingRight)
         {

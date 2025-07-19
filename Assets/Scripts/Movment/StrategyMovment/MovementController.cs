@@ -11,6 +11,7 @@ public class MovementController : MonoBehaviour
     [SerializeField] private List<MonoBehaviour> strategiesMono;
     private List<ICharacterAction> strategies;
 
+
     private ICharacterAction activeStrategy;
 
     private void Awake()
@@ -48,6 +49,6 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        activeStrategy?.ActionLogic();
+            activeStrategy?.ActionLogic();
     }
 }
