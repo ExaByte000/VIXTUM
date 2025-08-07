@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 705
+--- !u!114 &-6569964078557099680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main_Menu_Click
+  m_EditorClassIdentifier: 
+  Path: event:/Main_Menu_Click
+  Guid:
+    Data1: -103816550
+    Data2: 1142252542
+    Data3: 1124609921
+    Data4: -697119538
+  Banks:
+  - {fileID: -2867719627313070934}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-6244394012098743890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +96,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.bank
   Name: Tutorial
   StudioPath: bank:/Tutorial
-  lastModified: 638892555472032863
+  lastModified: 638902035933679015
   FileSizes: []
   Exists: 1
 --- !u!114 &-5102750370848279424
@@ -126,6 +153,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 839
+--- !u!114 &-2867719627313070934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MainMenu.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD Studio/VIXTUM/Build/Desktop/MainMenu.bank
+  Name: MainMenu
+  StudioPath: bank:/MainMenu
+  lastModified: 638902035974364081
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-2164990948578635366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,10 +213,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.strings.bank
   Name: Tutorial.strings
   StudioPath: bank:/Tutorial.strings
-  lastModified: 638892555472053473
+  lastModified: 638902035933699829
   FileSizes:
   - Name: 
-    Value: 1178
+    Value: 1360
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -188,6 +233,7 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -806125834040652772}
   - {fileID: -6244394012098743890}
+  - {fileID: -2867719627313070934}
   EditorEvents:
   - {fileID: -6865223827220670220}
   - {fileID: 8609121517630257668}
@@ -197,12 +243,15 @@ MonoBehaviour:
   - {fileID: -4845978270620849043}
   - {fileID: 1447659962698720143}
   - {fileID: -5102750370848279424}
+  - {fileID: 8242356850127619415}
+  - {fileID: -6569964078557099680}
+  - {fileID: 2677970765240797399}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6244394012098743890}
   StringsBanks:
   - {fileID: -806125834040652772}
-  cacheTime: 638892555472053473
+  cacheTime: 638902035974364081
   cacheVersion: 131846
 --- !u!114 &1447659962698720143
 MonoBehaviour:
@@ -231,6 +280,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14751
+--- !u!114 &2677970765240797399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main_Menu_Music
+  m_EditorClassIdentifier: 
+  Path: event:/Main_Menu_Music
+  Guid:
+    Data1: -624844267
+    Data2: 1334447840
+    Data3: 1890435500
+    Data4: -1246946869
+  Banks:
+  - {fileID: -2867719627313070934}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 232325
 --- !u!114 &3822073522588812323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +334,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 164064
+--- !u!114 &8242356850127619415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Main_Menu_Hover
+  m_EditorClassIdentifier: 
+  Path: event:/Main_Menu_Hover
+  Guid:
+    Data1: -1463293926
+    Data2: 1278395804
+    Data3: 1183165341
+    Data4: -1374090931
+  Banks:
+  - {fileID: -2867719627313070934}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 195
 --- !u!114 &8609121517630257668
 MonoBehaviour:
   m_ObjectHideFlags: 0

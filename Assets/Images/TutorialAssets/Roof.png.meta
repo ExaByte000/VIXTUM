@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: -8911611046186920078
     second: Roof_2
+  - first:
+      213: 4982174351361381264
+    second: Roof_3
+  - first:
+      213: 159020122781825597
+    second: Roof_4
+  - first:
+      213: 7569132548179218245
+    second: Roof_5
+  - first:
+      213: 4036658177174637080
+    second: Roof_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -102,19 +114,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -122,10 +121,10 @@ TextureImporter:
       name: Roof_0
       rect:
         serializedVersion: 2
-        x: 288
-        y: 1713
-        width: 4063
-        height: 909
+        x: 1474
+        y: 698
+        width: 2789
+        height: 521
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +143,10 @@ TextureImporter:
       name: Roof_1
       rect:
         serializedVersion: 2
-        x: 5816
-        y: 1879
-        width: 2793
-        height: 743
+        x: 5067
+        y: 836
+        width: 1807
+        height: 383
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +165,10 @@ TextureImporter:
       name: Roof_2
       rect:
         serializedVersion: 2
-        x: 10498
-        y: 1656
-        width: 5191
-        height: 966
+        x: 7473
+        y: 1008
+        width: 773
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,6 +179,94 @@ TextureImporter:
       bones: []
       spriteID: 277d49f18f8935480800000000000000
       internalID: -8911611046186920078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_3
+      rect:
+        serializedVersion: 2
+        x: 8953
+        y: 722
+        width: 2293
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09315f50d2d342540800000000000000
+      internalID: 4982174351361381264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_4
+      rect:
+        serializedVersion: 2
+        x: 11567
+        y: 728
+        width: 1250
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3abc8a85f3f43200800000000000000
+      internalID: 159020122781825597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_5
+      rect:
+        serializedVersion: 2
+        x: 13148
+        y: 719
+        width: 3793
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fc11813f5fa0960800000000000000
+      internalID: 7569132548179218245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof_6
+      rect:
+        serializedVersion: 2
+        x: 18345
+        y: 900
+        width: 1376
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a8b2a9937150830800000000000000
+      internalID: 4036658177174637080
       vertices: []
       indices: 
       edges: []
@@ -201,6 +288,10 @@ TextureImporter:
       Roof_0: -7850026957550372343
       Roof_1: -7644597623297819340
       Roof_2: -8911611046186920078
+      Roof_3: 4982174351361381264
+      Roof_4: 159020122781825597
+      Roof_5: 7569132548179218245
+      Roof_6: 4036658177174637080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
