@@ -2945,7 +2945,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: feda7b74a397144488593e1aad860926, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 2
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -3806,7 +3806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1322801812
 Transform:
   m_ObjectHideFlags: 0
@@ -4105,8 +4105,8 @@ Transform:
   m_GameObject: {fileID: 1386304504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.8, y: 3.9, z: 0}
-  m_LocalScale: {x: 1.523329, y: 1.523329, z: 1.523329}
+  m_LocalPosition: {x: -59, y: 5.7, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 875023587}
@@ -4395,7 +4395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee13914110f45e4c9931ac29757fc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1455447335}
   hero: {fileID: 1015596031}
 --- !u!95 &1455447335
 Animator:
@@ -6045,7 +6044,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031873390}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c9a9796304b02f24fa24d434e3eee336, type: 2}
   m_CullingMode: 0

@@ -6,6 +6,7 @@ public class CameraDictanceAnimController : MonoBehaviour
 
     public void StartDistanceAnim()
     {
+        cameraAnimator.enabled = true;
         cameraAnimator.SetTrigger("StartAnim");
     }
 }

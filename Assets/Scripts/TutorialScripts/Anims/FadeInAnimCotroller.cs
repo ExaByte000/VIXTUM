@@ -5,7 +5,7 @@ public class FadeInAnimCotroller : MonoBehaviour
     private void OnEnable() => Hero.Dead += StartFadeInAnim;
     private void OnDisable() => Hero.Dead -= StartFadeInAnim;
 
-   [SerializeField] private Animator anim;
+   private Animator anim;
    [SerializeField] private GameObject hero;
 
     private void Start()
