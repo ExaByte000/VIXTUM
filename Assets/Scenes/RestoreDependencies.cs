@@ -27,10 +27,6 @@ public class RestoreDependencies : MonoBehaviour
             CCam.Follow = transform;
             CCam.LookAt = transform;
         }
-        if(hero != null)
-        {
-            hero.sortingLayerName = "Default";
-        }
         if(scene.name == "MainScene")
         {
             transform.position = new(88f, transform.position.y, transform.position.z);

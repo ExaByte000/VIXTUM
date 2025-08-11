@@ -3,8 +3,8 @@ using UnityEngine;
 public class FadeOutDisable : MonoBehaviour
 {
 
-    public void DisableGameObject()
+    public virtual void DisableGameObject()
     {
-        gameObject.SetActive(false);
+         transform.parent.gameObject.SetActive(false);
     }
 }
