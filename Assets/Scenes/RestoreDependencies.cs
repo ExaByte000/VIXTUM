@@ -19,7 +19,7 @@ public class RestoreDependencies : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameObject camera = GameObject.FindGameObjectWithTag("CinemachineCamera");
-        SpriteRenderer hero = GetComponentInChildren<SpriteRenderer>();
+        Hero hero = GetComponent<Hero>();
 
 
         if (camera.TryGetComponent<CinemachineCamera>(out var CCam))
@@ -29,6 +29,7 @@ public class RestoreDependencies : MonoBehaviour
         }
         if(scene.name == "MainScene")
         {
+            hero.Health = 10;
             transform.position = new(88f, transform.position.y, transform.position.z);
         }
         

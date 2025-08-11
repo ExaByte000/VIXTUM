@@ -26,7 +26,6 @@ public class Hero : Entity
 
     protected override void Die()
     {
-        health = 10;
         Dead.Invoke(SceneNumber);
     }
 }
