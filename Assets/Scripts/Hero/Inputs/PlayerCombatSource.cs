@@ -1,8 +1,27 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
-public class PlayerCombatSource : MonoBehaviour, ICommandCombatSource
+public class PlayerCombatSource : MonoBehaviour
 {
-    public bool MeleeAttack() => Input.GetButtonDown("Fire1");
+    public static Action<bool> HeroAnimAttackDetectorEvent;
 
-    public bool RangeAttack() => Input.GetButtonDown("Fire2");
+    private Coroutine attackDealyRoutine;
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1") && attackDealyRoutine == null)
+        {
+            attackDealyRoutine = StartCoroutine(nameof(AttackDealyRoutine));
+        }
+    }
+
+    private IEnumerator AttackDealyRoutine()
+    {
+        HeroAnimAttackDetectorEvent?.Invoke(true);
+        yield return new WaitForSeconds(0.37f);
+        HeroAnimAttackDetectorEvent?.Invoke(false);
+        attackDealyRoutine = null;
+            
+    }
 }

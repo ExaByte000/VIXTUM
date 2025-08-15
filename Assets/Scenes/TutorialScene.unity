@@ -3908,7 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7963135a6122c0d419b101607de81763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 999
+  health: 100
   detectRange: 5
   layer:
     serializedVersion: 2
@@ -4268,6 +4268,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1411889192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1070167394932567326, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+  m_PrefabInstance: {fileID: 1758874058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1411889195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411889192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8dcd07e1d2c364c844695cb13e74d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437402435
 GameObject:
   m_ObjectHideFlags: 0
@@ -5191,6 +5208,10 @@ PrefabInstance:
       propertyPath: attack
       value: 
       objectReference: {fileID: 1864774113}
+    - target: {fileID: 1617399359465464370, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: jumpForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1770772513377149118, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -5199,13 +5220,25 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2468653171678696278, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: dashForce
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468653171678696278, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: dashCoolDown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468653171678696278, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: dashDuration
+      value: 0.24
+      objectReference: {fileID: 0}
     - target: {fileID: 2724918158017725347, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3114876060449505673, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: health
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3114876060449505673, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: SceneNumber
@@ -5268,8 +5301,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7650848889033041414, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: combatSourceMono
+      value: 
+      objectReference: {fileID: 1411889195}
+    - target: {fileID: 7650848889033041414, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: 'characterAttacksMono.Array.data[1]'
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678360678859653043, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: m_GravityScale
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9177078628380444431, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5287,6 +5328,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7267778293008468777, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1758874060}
+    - targetCorrespondingSourceObject: {fileID: 1070167394932567326, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1411889195}
   m_SourcePrefab: {fileID: 100100000, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
 --- !u!1 &1758874059 stripped
 GameObject:
