@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: e5b3ac364578b704eabf9616adc28990
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4926246672517531500
+    second: HeroAttacks_0
+  - first:
+      213: -3368152673859955100
+    second: HeroAttacks_1
+  - first:
+      213: 5593991755381371046
+    second: HeroAttacks_2
+  - first:
+      213: 3711756375477931499
+    second: HeroAttacks_3
+  - first:
+      213: -7311645893812185134
+    second: HeroAttacks_4
+  - first:
+      213: 2051184715099391769
+    second: HeroAttacks_5
+  - first:
+      213: -6617731040135531208
+    second: HeroAttacks_6
+  - first:
+      213: -7484308848788757831
+    second: HeroAttacks_7
+  - first:
+      213: 2688590823778035937
+    second: HeroAttacks_8
+  - first:
+      213: 4057964512017327501
+    second: HeroAttacks_9
+  - first:
+      213: -1093806409893584165
+    second: HeroAttacks_10
+  - first:
+      213: 4165125561694051995
+    second: HeroAttacks_11
+  - first:
+      213: 7411650123232218025
+    second: HeroAttacks_12
+  - first:
+      213: -8067404427966195807
+    second: HeroAttacks_13
+  - first:
+      213: 8510037234906287107
+    second: HeroAttacks_14
+  - first:
+      213: 8362869714571240910
+    second: HeroAttacks_15
+  - first:
+      213: -927129580353370878
+    second: HeroAttacks_16
+  - first:
+      213: -176781659911999812
+    second: HeroAttacks_17
+  - first:
+      213: 7143246144295857996
+    second: HeroAttacks_18
+  - first:
+      213: -3669562987181424417
+    second: HeroAttacks_19
+  - first:
+      213: 8534256517928745666
+    second: HeroAttacks_20
+  - first:
+      213: 4951763237471305673
+    second: HeroAttacks_21
+  - first:
+      213: -8233613730634757904
+    second: HeroAttacks_22
+  - first:
+      213: -8091168171850632677
+    second: HeroAttacks_23
+  - first:
+      213: 8978959041782668057
+    second: HeroAttacks_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HeroAttacks_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3099
+        width: 1444
+        height: 1048
+      alignment: 9
+      pivot: {x: 0.21836197, y: 0.73283494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49874a070c472abb0800000000000000
+      internalID: -4926246672517531500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_1
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3099
+        width: 1358
+        height: 1045
+      alignment: 9
+      pivot: {x: 0.20809887, y: 0.6744566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4669b450dfae141d0800000000000000
+      internalID: -3368152673859955100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_3
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 3099
+        width: 1294
+        height: 1229
+      alignment: 9
+      pivot: {x: 0.1886041, y: 0.5821564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed472df1cec28330800000000000000
+      internalID: 3711756375477931499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_6
+      rect:
+        serializedVersion: 2
+        x: 4331
+        y: 3099
+        width: 684
+        height: 1269
+      alignment: 9
+      pivot: {x: 0.33324695, y: 0.56114846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83535a56ea81924a0800000000000000
+      internalID: -6617731040135531208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_7
+      rect:
+        serializedVersion: 2
+        x: 5106
+        y: 3099
+        width: 968
+        height: 970
+      alignment: 9
+      pivot: {x: 0.8718383, y: 0.750594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b222ae61c4622890800000000000000
+      internalID: -7484308848788757831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_8
+      rect:
+        serializedVersion: 2
+        x: 6165
+        y: 3099
+        width: 937
+        height: 972
+      alignment: 9
+      pivot: {x: 0.86717814, y: 0.7558496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e82aa50c1bcf4520800000000000000
+      internalID: 2688590823778035937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_9
+      rect:
+        serializedVersion: 2
+        x: 7227
+        y: 3095
+        width: 1260
+        height: 1296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d852fe14939c05830800000000000000
+      internalID: 4057964512017327501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_11
+      rect:
+        serializedVersion: 2
+        x: 8512
+        y: 3101
+        width: 971
+        height: 952
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e5cad61af7dc930800000000000000
+      internalID: 4165125561694051995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_12
+      rect:
+        serializedVersion: 2
+        x: 9604
+        y: 3099
+        width: 846
+        height: 953
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab8cbab4887bd660800000000000000
+      internalID: 7411650123232218025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_13
+      rect:
+        serializedVersion: 2
+        x: 10503
+        y: 3099
+        width: 887
+        height: 999
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a759ab6a62da0090800000000000000
+      internalID: -8067404427966195807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_15
+      rect:
+        serializedVersion: 2
+        x: 11505
+        y: 3040
+        width: 1656
+        height: 1344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec524ef62b1ee0470800000000000000
+      internalID: 8362869714571240910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_16
+      rect:
+        serializedVersion: 2
+        x: 13209
+        y: 3040
+        width: 1454
+        height: 1186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205c74e0f8c2223f0800000000000000
+      internalID: -927129580353370878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_18
+      rect:
+        serializedVersion: 2
+        x: 14695
+        y: 3032
+        width: 858
+        height: 944
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4feeed8588e12360800000000000000
+      internalID: 7143246144295857996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_19
+      rect:
+        serializedVersion: 2
+        x: 15641
+        y: 3037
+        width: 1172
+        height: 933
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd04124c7e7131dc0800000000000000
+      internalID: -3669562987181424417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroAttacks_20
+      rect:
+        serializedVersion: 2
+        x: 16851
+        y: 3032
+        width: 1046
+        height: 931
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca743d2615cf6670800000000000000
+      internalID: 8534256517928745666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3abd3b5d4ccdd454ca0fca7b21945a31
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HeroAttacks_0: -4926246672517531500
+      HeroAttacks_1: -3368152673859955100
+      HeroAttacks_10: -1093806409893584165
+      HeroAttacks_11: 4165125561694051995
+      HeroAttacks_12: 7411650123232218025
+      HeroAttacks_13: -8067404427966195807
+      HeroAttacks_14: 8510037234906287107
+      HeroAttacks_15: 8362869714571240910
+      HeroAttacks_16: -927129580353370878
+      HeroAttacks_17: -176781659911999812
+      HeroAttacks_18: 7143246144295857996
+      HeroAttacks_19: -3669562987181424417
+      HeroAttacks_2: 5593991755381371046
+      HeroAttacks_20: 8534256517928745666
+      HeroAttacks_21: 4951763237471305673
+      HeroAttacks_22: -8233613730634757904
+      HeroAttacks_23: -8091168171850632677
+      HeroAttacks_24: 8978959041782668057
+      HeroAttacks_3: 3711756375477931499
+      HeroAttacks_4: -7311645893812185134
+      HeroAttacks_5: 2051184715099391769
+      HeroAttacks_6: -6617731040135531208
+      HeroAttacks_7: -7484308848788757831
+      HeroAttacks_8: 2688590823778035937
+      HeroAttacks_9: 4057964512017327501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

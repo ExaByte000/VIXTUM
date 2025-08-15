@@ -9,7 +9,7 @@ public abstract class Attack : MonoBehaviour, ICharacterAction
     [SerializeField] protected Transform attackPoint;
     [SerializeField] protected LayerMask Layer;
     
-    protected bool isAttacking = false;
+    public bool isAttacking = false;
     public bool WantsControl => isAttacking;
 
     public abstract int Priority { get; }

@@ -16,7 +16,6 @@ public class EnemyCombatSource : MonoBehaviour, ICommandCombatSource
 
     public bool MeleeAttack()
     {
-        
         return input;
     }
 

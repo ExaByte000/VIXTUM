@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SpiderSheepAnimController : MonoBehaviour
 {
-    //[SerializeField] private Jump jump;
-    //[SerializeField] private Dash dash;
     private Rigidbody2D rigidbody;
     private Animator anim;
     private bool attackFlag = false;

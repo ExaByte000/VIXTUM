@@ -5,6 +5,7 @@ public class HeroAnimController : MonoBehaviour
 {
     [SerializeField] private Jump jump;
     [SerializeField] private Dash dash;
+    [SerializeField] private MeleeAttack attack;
     private Rigidbody2D rigidbody;
 
     private Animator anim;
@@ -21,6 +22,7 @@ public class HeroAnimController : MonoBehaviour
         anim.SetBool("IsGrounded", jump.IsGrounded);
         anim.SetBool("MovmentFalg", rigidbody.linearVelocityX != 0);
         anim.SetBool("IsDashing", dash.IsDashing);
+        anim.SetBool("IsAttacking", attack.isAttacking);
 
     }
 }
