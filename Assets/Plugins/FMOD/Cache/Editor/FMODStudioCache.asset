@@ -123,7 +123,7 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.bank
   Name: Tutorial
   StudioPath: bank:/Tutorial
-  lastModified: 638908072961205405
+  lastModified: 638909976907634777
   FileSizes: []
   Exists: 1
 --- !u!114 &-5102750370848279424
@@ -180,6 +180,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 839
+--- !u!114 &-3328837137225581730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial_Jump_Up
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial_Jump_Up
+  Guid:
+    Data1: -1168721747
+    Data2: 1260406667
+    Data3: -1957305470
+    Data4: -1671523166
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-2867719627313070934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,10 +267,10 @@ MonoBehaviour:
   Path: ../../FMOD Studio/VIXTUM/Build/Desktop/Tutorial.strings.bank
   Name: Tutorial.strings
   StudioPath: bank:/Tutorial.strings
-  lastModified: 638908072961215944
+  lastModified: 638909976907681950
   FileSizes:
   - Name: 
-    Value: 1398
+    Value: 1538
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -274,13 +301,43 @@ MonoBehaviour:
   - {fileID: 2677970765240797399}
   - {fileID: 5999072267383860135}
   - {fileID: -9048456840649371867}
+  - {fileID: 33712405589258405}
+  - {fileID: 5976005578985056160}
+  - {fileID: -3328837137225581730}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6244394012098743890}
   StringsBanks:
   - {fileID: -806125834040652772}
-  cacheTime: 638908072961215944
+  cacheTime: 638909976907681950
   cacheVersion: 131846
+--- !u!114 &33712405589258405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sword_Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Sword_Attack
+  Guid:
+    Data1: 2121288348
+    Data2: 1263441282
+    Data3: 246329252
+    Data4: 142068587
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1567
 --- !u!114 &2677970765240797399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +392,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 164064
+--- !u!114 &5976005578985056160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial_Jump_Down
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial_Jump_Down
+  Guid:
+    Data1: 2032627557
+    Data2: 1288120015
+    Data3: -686096499
+    Data4: 1007087567
+  Banks:
+  - {fileID: -6244394012098743890}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 809
 --- !u!114 &5999072267383860135
 MonoBehaviour:
   m_ObjectHideFlags: 0
