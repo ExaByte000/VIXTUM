@@ -10,16 +10,17 @@ public class PlayerCombatSource : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && attackDealyRoutine == null)
+        if (Input.GetButtonDown("Fire1"))
         {
-            attackDealyRoutine = StartCoroutine(nameof(AttackDealyRoutine));
+            HeroAnimAttackDetectorEvent?.Invoke(true);
+            //attackDealyRoutine = StartCoroutine(nameof(AttackDealyRoutine));
         }
     }
 
     private IEnumerator AttackDealyRoutine()
     {
         HeroAnimAttackDetectorEvent?.Invoke(true);
-        yield return new WaitForSeconds(0.37f);
+        yield return null;
         HeroAnimAttackDetectorEvent?.Invoke(false);
         attackDealyRoutine = null;
             

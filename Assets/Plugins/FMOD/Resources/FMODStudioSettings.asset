@@ -539,7 +539,7 @@ MonoBehaviour:
   sourceProjectPath: 
   sourceBankPath: ../../FMOD Studio/VIXTUM/Build/Desktop
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: -1
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0

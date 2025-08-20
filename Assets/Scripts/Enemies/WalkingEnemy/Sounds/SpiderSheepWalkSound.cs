@@ -5,7 +5,7 @@ public class SpiderSheepWalkSound : MonoBehaviour
 {
     public void PlayMovment()
     {
-        RuntimeManager.PlayOneShot("event:/Spider_attack");
+        RuntimeManager.PlayOneShot("event:/Spider_Walks");
         
     }
 }
