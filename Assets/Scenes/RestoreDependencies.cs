@@ -24,18 +24,14 @@ public class RestoreDependencies : MonoBehaviour
         Hero hero = GetComponent<Hero>();
 
 
-        if (camera.TryGetComponent<CinemachineCamera>(out var CCam))
+        if (camera.TryGetComponent<CinemachineCamera>(out var CCam) && scene.name == "MainScene")
         {
-            Vector3 cameraPos = new(88f, hero.transform.position.y + 4.0f, 0f);
-            CCam.ForceCameraPosition(cameraPos, hero.transform.rotation);
-            CCam.Follow = transform;
-            CCam.LookAt = transform;
-        }
-        if(scene.name == "MainScene")
-        {
+           
             hero.Health = 10;
             transform.position = new(88f, transform.position.y, transform.position.z);
+            CCam.ForceCameraPosition(transform.position, transform.rotation);
         }
+        
         
     }
 

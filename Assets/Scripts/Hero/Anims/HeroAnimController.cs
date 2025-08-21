@@ -16,6 +16,7 @@ public class HeroAnimController : MonoBehaviour
 
     private int comboStep = 0;
     private bool inputBuffered = false;
+    private bool attackCooldown = false;
 
     private float comboResetTime = 0.4f;
     private float lastAttackTime;
