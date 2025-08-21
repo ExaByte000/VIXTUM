@@ -5928,7 +5928,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 12.999378
+  orthographic size: 10
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5999,7 +5999,7 @@ Transform:
   m_GameObject: {fileID: 1698210678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 202.3, y: 5.679553, z: -1}
+  m_LocalPosition: {x: 202.3, y: 3.7000008, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7070,7 +7070,6 @@ GameObject:
   - component: {fileID: 2031873395}
   - component: {fileID: 2031873396}
   - component: {fileID: 2031873397}
-  - component: {fileID: 2031873398}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: CinemachineCamera
@@ -7161,7 +7160,7 @@ Transform:
   m_GameObject: {fileID: 2031873390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 202.3, y: 5.679553, z: -1}
+  m_LocalPosition: {x: 202.3, y: 3.7000008, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7231,18 +7230,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb1c7f51056d1ff4f8149e22b0f15264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2031873398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031873390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c83e3c87562a69f4fa931ef4c6f72c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2064560755

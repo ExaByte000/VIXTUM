@@ -16,7 +16,8 @@ public class HeroAnimController : MonoBehaviour
 
     private int comboStep = 0;
     private bool inputBuffered = false;
-    private bool attackCooldown = false;
+    private bool attackCooldownFlag = false;
+    private float attackCooldown = 1f;
 
     private float comboResetTime = 0.4f;
     private float lastAttackTime;
@@ -47,10 +48,13 @@ public class HeroAnimController : MonoBehaviour
         anim.SetBool("IsGrounded", jump.IsGrounded);
         anim.SetBool("MovmentFalg", rigidbody.linearVelocityX != 0);
         anim.SetBool("IsDashing", dash.IsDashing);
+        anim.SetBool("AttackCooldown", attackCooldownFlag);
         if (Time.time - lastAttackTime > comboResetTime || rigidbody.linearVelocityX != 0)
         {
             comboStep = 0;
             inputBuffered = false;
+            anim.SetBool("Attack1", false);
+            anim.SetBool("Attack2", false);
         }
 
     }
@@ -82,9 +86,10 @@ public class HeroAnimController : MonoBehaviour
 
         if (comboStep == 0) 
         {
-            anim.SetTrigger("Attack1");
+            anim.SetBool("Attack1", true);
             comboStep = 1;
             lastAttackTime = Time.time;
+            //anim.SetBool("Attack1", false);
         }
         else if (comboStep == 1) 
         {
@@ -93,26 +98,43 @@ public class HeroAnimController : MonoBehaviour
     }
     public void OnAttack1End()
     {
+       
         if (inputBuffered) 
         {
-            anim.SetTrigger("Attack2");
+            anim.SetBool("Attack2", true);
             comboStep = 2;
             inputBuffered = false;
             lastAttackTime = Time.time;
         }
         else
         {
+            anim.SetBool("Attack1", false);
+            anim.SetBool("Attack2", false);
             comboStep = 0;
         }
     }
 
     public void OnAttack2End()
     {
+        anim.SetBool("Attack1", false);
+        anim.SetBool("Attack2", false);
         comboStep = 0; 
     }
 
     private void HandlePause(bool isPaused)
     {
         anim.enabled = !isPaused;
+    }
+
+    public void AttackCooldownStart()
+    {
+        attackCooldownFlag = true;
+        StartCoroutine(AttackCooldown());
+    }
+
+    private IEnumerator AttackCooldown()
+    {
+        yield return new WaitForSeconds(attackCooldown);
+        attackCooldownFlag = false;
     }
 }
