@@ -15,9 +15,14 @@ public class FadeOutWithHero : FadeOutDisable
     }
     public override void DisableGameObject()
     {
-        camera.GetComponent<Animator>().enabled = false;
-        camera.GetComponent<CinemachinePositionComposer>().Composition.ScreenPosition = new(0, 0.05f);
+        
         GameObject.Find("HeroSprite").GetComponent<SpriteRenderer>().sortingLayerName = "Default";
         base.DisableGameObject();
+    }
+
+    public void FixCamera()
+    {
+        camera.GetComponent<Animator>().enabled = false;
+        camera.GetComponent<CinemachinePositionComposer>().Composition.ScreenPosition = new(0, 0.05f);
     }
 }
