@@ -5,7 +5,7 @@ public class Resume : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     public void ResumeGame()
     {
-        Time.timeScale = 1f;
+        GamePause.Instance.SetPause(false);
         pauseMenu.SetActive(false);
         
     }

@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class RestoreDependencies : MonoBehaviour
 {
+
+    [SerializeField] private GameObject camera;
+
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -18,12 +21,13 @@ public class RestoreDependencies : MonoBehaviour
     
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GameObject camera = GameObject.FindGameObjectWithTag("CinemachineCamera");
         Hero hero = GetComponent<Hero>();
 
 
         if (camera.TryGetComponent<CinemachineCamera>(out var CCam))
         {
+            Vector3 cameraPos = new(88f, hero.transform.position.y + 4.0f, 0f);
+            CCam.ForceCameraPosition(cameraPos, hero.transform.rotation);
             CCam.Follow = transform;
             CCam.LookAt = transform;
         }

@@ -1578,6 +1578,7 @@ GameObject:
   - component: {fileID: 656363491}
   - component: {fileID: 656363490}
   - component: {fileID: 656363489}
+  - component: {fileID: 656363493}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1668,6 +1669,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &656363493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656363488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb1c7f51056d1ff4f8149e22b0f15264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &658413059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5066,6 +5079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee13914110f45e4c9931ac29757fc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spiderSheepAnimator: {fileID: 1081684367}
+  spiderSounds: {fileID: 6993324640702496760}
   hero: {fileID: 1015596031}
 --- !u!95 &1455447335
 Animator:
@@ -5870,6 +5885,7 @@ GameObject:
   - component: {fileID: 1698210686}
   - component: {fileID: 1698210687}
   - component: {fileID: 1698210688}
+  - component: {fileID: 1698210689}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -6052,7 +6068,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698210678}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d83d491135a0884eb74dd470512fdd6, type: 3}
   m_Name: 
@@ -6071,6 +6087,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 656363488}
+--- !u!114 &1698210689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698210678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939ae7994571d7347986d275cf109fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1702226850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6368,6 +6396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c89c48acdf04a54c912341eff0cf00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 2031873390}
 --- !u!114 &1758874066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7040,6 +7069,7 @@ GameObject:
   - component: {fileID: 2031873394}
   - component: {fileID: 2031873395}
   - component: {fileID: 2031873396}
+  - component: {fileID: 2031873397}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: CinemachineCamera
@@ -7188,6 +7218,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e8a08c43937e4f47bc00bf31d4d299b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2031873397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031873390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb1c7f51056d1ff4f8149e22b0f15264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2064560755

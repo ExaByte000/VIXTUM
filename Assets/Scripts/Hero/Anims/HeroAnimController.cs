@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -28,14 +29,19 @@ public class HeroAnimController : MonoBehaviour
     private void OnEnable()
     {
         PlayerCombatSource.HeroAnimAttackDetectorEvent += StartAttackAnim;
+        GamePause.OnPauseChanged += HandlePause;
     }
     private void OnDisable()
     {
         PlayerCombatSource.HeroAnimAttackDetectorEvent -= StartAttackAnim;
+        GamePause.OnPauseChanged -= HandlePause;
     }
 
     private void Update()
     {
+        if (GamePause.Instance.IsPaused)
+            return;
+    
         anim.SetFloat("VerticalVelocity", rigidbody.linearVelocityY);
         anim.SetBool("IsGrounded", jump.IsGrounded);
         anim.SetBool("MovmentFalg", rigidbody.linearVelocityX != 0);
@@ -102,5 +108,10 @@ public class HeroAnimController : MonoBehaviour
     public void OnAttack2End()
     {
         comboStep = 0; 
+    }
+
+    private void HandlePause(bool isPaused)
+    {
+        anim.enabled = !isPaused;
     }
 }

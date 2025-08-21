@@ -13,11 +13,13 @@ public class SpiderSheepAnimController : MonoBehaviour
     private void OnEnable()
     {
         EnemyDetector.EnemyAnimAttackDetectorEvent += StartAttackAnim;
+        GamePause.OnPauseChanged += HandlePause;
     }
 
     private void OnDisable()
     {
-        EnemyDetector.EnemyAnimAttackDetectorEvent += StartAttackAnim;
+        EnemyDetector.EnemyAnimAttackDetectorEvent -= StartAttackAnim;
+        GamePause.OnPauseChanged -= HandlePause;
     }
 
     private void Start()
@@ -55,4 +57,8 @@ public class SpiderSheepAnimController : MonoBehaviour
         EnemyAttackDetectorEvent?.Invoke(false);
     }
 
+    private void HandlePause(bool isPaused)
+    {
+        anim.enabled = !isPaused;
+    }
 }

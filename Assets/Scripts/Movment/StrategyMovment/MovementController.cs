@@ -29,6 +29,9 @@ public class MovementController : MonoBehaviour
 
     private void Update()
     {
+        if (GamePause.Instance.IsPaused)
+            return;
+
         foreach (var strategy in strategies)
         {
             strategy.ActionRequest
@@ -49,6 +52,8 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-            activeStrategy?.ActionLogic();
+        if (GamePause.Instance.IsPaused)
+            return;
+        activeStrategy?.ActionLogic();
     }
 }

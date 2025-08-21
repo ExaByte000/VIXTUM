@@ -11,11 +11,41 @@ public class SpiderSeepSounds : MonoBehaviour
     private float minDistance;
     private float maxDistance;
 
+    private void OnEnable()
+    {
+        GamePause.OnPauseChanged += SoundHandler;
+    }
+    private void OnDisable()
+    {
+        GamePause.OnPauseChanged -= SoundHandler;
+    }
+
     private void Start()
     {
         spiderSounds = RuntimeManager.CreateInstance(eventPath);
         spiderSounds.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject));
         spiderSounds.start();
+    }
+
+    private void SoundHandler(bool isSoundStoped)
+    {
+        spiderSounds.getPlaybackState(out PLAYBACK_STATE state);
+
+        if (isSoundStoped) 
+        {
+            spiderSounds.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+        else if(state != PLAYBACK_STATE.PLAYING)
+        {
+            spiderSounds.start();
+        }
+
+    }
+
+    public void StopSounds()
+    {
+        spiderSounds.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        spiderSounds.release();
     }
 
     private void OnDrawGizmosSelected()

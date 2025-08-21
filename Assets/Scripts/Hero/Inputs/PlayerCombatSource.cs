@@ -10,6 +10,9 @@ public class PlayerCombatSource : MonoBehaviour
 
     private void Update()
     {
+        if(GamePause.Instance.IsPaused)
+            return;
+
         if (Input.GetButtonDown("Fire1"))
         {
             HeroAnimAttackDetectorEvent?.Invoke(true);

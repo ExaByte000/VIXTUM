@@ -34,6 +34,9 @@ public class CombatController : MonoBehaviour
 
     private void Update()
     {
+        if (GamePause.Instance.IsPaused)
+            return;
+
         foreach (var attack in characterAttacks)
         {
             attack.ActionRequest(0, combatSource.MeleeAttack(), combatSource.RangeAttack());
@@ -47,6 +50,8 @@ public class CombatController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GamePause.Instance.IsPaused)
+            return;
         characterActiveAttack?.ActionLogic();
     }
 }
