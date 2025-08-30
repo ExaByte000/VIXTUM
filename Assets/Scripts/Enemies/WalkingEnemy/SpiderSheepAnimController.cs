@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class SpiderSheepAnimController : MonoBehaviour
 {
+    [SerializeField] private Enemy enemy;
+
     private Rigidbody2D rigidbody;
     private Animator anim;
     private bool attackFlag = false;
+
 
     public static Action<bool> EnemyAttackDetectorEvent;
 
@@ -30,12 +33,8 @@ public class SpiderSheepAnimController : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(rigidbody.linearVelocityX);
-        //anim.SetFloat("VerticalVelocity", rigidbody.linearVelocityY);
-        //anim.SetBool("IsGrounded", jump.IsGrounded);
         anim.SetBool("MovmentFalg", Math.Abs(rigidbody.linearVelocityX) > 1 && !attackFlag);
-        //anim.SetBool("IsDashing", dash.IsDashing);
-
+        anim.SetBool("TakeDamage", enemy.TakeDamageFlag);
     }
 
     private void StartAttackAnim(bool attackStart)
@@ -56,6 +55,7 @@ public class SpiderSheepAnimController : MonoBehaviour
         yield return null;
         EnemyAttackDetectorEvent?.Invoke(false);
     }
+
 
     private void HandlePause(bool isPaused)
     {
