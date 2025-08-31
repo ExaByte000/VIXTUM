@@ -1317,7 +1317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &656363489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2765,7 +2765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2662055, y: 0.39400002}
   m_AnchorMax: {x: 0.7325421, y: 0.48131374}
-  m_AnchoredPosition: {x: 0.26431274, y: 0.19999695}
+  m_AnchoredPosition: {x: 0.26431274, y: 0.2000122}
   m_SizeDelta: {x: -1.5359955, y: -1.8116989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902404896
@@ -4497,10 +4497,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 999
   detectRange: 5
-  layer:
-    serializedVersion: 2
-    m_Bits: 64
-  target: {fileID: 0}
   speed: 10
 --- !u!50 &1345030661
 Rigidbody2D:
@@ -5248,7 +5244,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3105792, y: 0.23134317}
   m_AnchorMax: {x: 0.71300006, y: 0.3053137}
-  m_AnchoredPosition: {x: -0.1444397, y: -0.3000183}
+  m_AnchoredPosition: {x: -0.1444397, y: -0.30004883}
   m_SizeDelta: {x: -0.28179932, y: 1.2154999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476635842
@@ -5670,7 +5666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24458157, y: 0.027518893}
   m_AnchorMax: {x: 0.7504184, y: 0.97400004}
-  m_AnchoredPosition: {x: 0.5, y: -1.5}
+  m_AnchoredPosition: {x: 0.5, y: -1.5000305}
   m_SizeDelta: {x: 2.1777039, y: 0.75579834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608377488
