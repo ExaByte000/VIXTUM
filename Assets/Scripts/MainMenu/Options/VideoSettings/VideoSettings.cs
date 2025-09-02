@@ -6,10 +6,33 @@ using UnityEngine.UI;
 
 public class VideoSettings : MonoBehaviour
 {
-    public TMP_Dropdown resolutionDropdown;
+    [SerializeField] private TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Toggle fullscreenToggle;
+
 
     Resolution[] resolutions;
 
+    void OnEnable()
+    {
+        //resolutions = Screen.resolutions;
+        // Синхронизируем фуллскрин
+        fullscreenToggle.isOn = Screen.fullScreen;
+
+        //// Синхронизируем разрешение
+        //Resolution current = Screen.currentResolution;
+        //int index = 0;
+        //for (int i = 0; i < resolutions.Length; i++)
+        //{
+        //    if (resolutions[i].width == current.width &&
+        //        resolutions[i].height == current.height)
+        //    {
+        //        index = i;
+        //        break;
+        //    }
+        //}
+        //resolutionDropdown.value = index;
+        //resolutionDropdown.RefreshShownValue();
+    }
 
     void Start()
     {
@@ -19,6 +42,7 @@ public class VideoSettings : MonoBehaviour
         HashSet<string> uniqueOptions = new HashSet<string>();
 
         resolutions = Screen.resolutions;
+
         int currentResolutionIndex = 0;
 
         for (int i = 0; i < resolutions.Length; i++)

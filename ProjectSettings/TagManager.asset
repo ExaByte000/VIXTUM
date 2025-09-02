@@ -49,5 +49,8 @@ TagManager:
   - name: AboweFadeIn
     uniqueID: 3766075711
     locked: 0
+  - name: PauseMenu
+    uniqueID: 3415898811
+    locked: 0
   m_RenderingLayers:
   - Default

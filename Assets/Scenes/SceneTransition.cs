@@ -7,4 +7,16 @@ public class SceneTransition : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    private void Update()
+    {
+        if (GamePause.Instance.IsPaused)
+        {
+            GetComponent<Animator>().enabled = false;
+        }
+        else
+        {
+            GetComponent<Animator>().enabled = true;
+        }
+    }
 }

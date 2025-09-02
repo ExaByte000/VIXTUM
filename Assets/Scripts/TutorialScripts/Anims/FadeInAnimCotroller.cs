@@ -23,4 +23,16 @@ public class FadeInAnimCotroller : MonoBehaviour
         hero.GetComponent<SpriteRenderer>().sortingLayerName = "AboweFadeIn";
         anim.SetTrigger("StartAnim");
     }
+
+    private void Update()
+    {
+        if (GamePause.Instance.IsPaused)
+        {
+            GetComponent<Animator>().enabled = false;
+        }
+        else
+        {
+            GetComponent<Animator>().enabled = true;
+        }
+    }
 }

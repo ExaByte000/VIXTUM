@@ -18,6 +18,20 @@ public class MusicSettings : MonoBehaviour
         
     }
 
+    void OnEnable()
+    {
+        if (slider.name == "MusicSlider")
+        {
+            backgroundMusic.getVolume(out float volume);
+            slider.value = volume;
+        }
+        else if (slider.name == "SoundsSlider")
+        {
+            stepsSounds.getVolume(out float volume);
+            slider.value = volume;
+        }
+    }
+
     public void SetVolume()
     {
         Debug.Log(slider.name);

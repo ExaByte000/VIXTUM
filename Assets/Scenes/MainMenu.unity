@@ -4733,6 +4733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolutionDropdown: {fileID: 1985798045}
+  fullscreenToggle: {fileID: 794070452}
 --- !u!1 &1545639131
 GameObject:
   m_ObjectHideFlags: 0
