@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,6 +9,8 @@ public class RestoreDependencies : MonoBehaviour
 {
 
     [SerializeField] private GameObject camera;
+
+    private CinemachineConfiner2D CCamConfinder;
 
     private void Awake()
     {
@@ -26,13 +30,13 @@ public class RestoreDependencies : MonoBehaviour
 
         if (camera.TryGetComponent<CinemachineCamera>(out var CCam) && scene.name == "MainScene")
         {
-           
+            
             hero.Health = 10;
-            transform.position = new(88f, transform.position.y, transform.position.z);
+            transform.position = new(1.5f, transform.position.y, transform.position.z);
             CCam.ForceCameraPosition(transform.position, transform.rotation);
+            CCamConfinder = CCam.GetComponent<CinemachineConfiner2D>();
+            CCamConfinder.BoundingShape2D = GameObject.Find("CameraLimits").GetComponent<Collider2D>();
         }
-        
-        
     }
 
 }
