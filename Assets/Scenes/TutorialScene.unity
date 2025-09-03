@@ -6224,7 +6224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xPos: 60
   yPos: 0
-  camera: {fileID: 2031873391}
+  camera: {fileID: 2031873390}
 --- !u!61 &1083779368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7330,7 +7330,7 @@ Transform:
   m_GameObject: {fileID: 1281485183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -101.86125, y: 12, z: 0}
+  m_LocalPosition: {x: -102.441, y: 12, z: 0}
   m_LocalScale: {x: 2.2737, y: 2.2737, z: 2.2737}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7770,7 +7770,7 @@ Transform:
   m_GameObject: {fileID: 1359207409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -101.86125, y: -12.299999, z: 0}
+  m_LocalPosition: {x: -102.441, y: -12.299999, z: 0}
   m_LocalScale: {x: 2.2737, y: 2.2737, z: 2.2737}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9300,7 +9300,7 @@ Transform:
   m_GameObject: {fileID: 1698210678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8404999, y: 3.6999965, z: -1}
+  m_LocalPosition: {x: -2, y: 3.7000008, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10509,7 +10509,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031873390}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c9a9796304b02f24fa24d434e3eee336, type: 2}
   m_CullingMode: 0

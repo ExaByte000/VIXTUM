@@ -66,5 +66,19 @@ public class Dash : MovmentBase
         canDash = true;
     }
 
+    private void OnEnable()
+    {
+        GamePause.OnPauseChanged += PauseLogic;
+    }
 
+    private void OnDisable()
+    {
+        GamePause.OnPauseChanged += PauseLogic;
+    }
+
+    private void PauseLogic(bool isPaused)
+    {
+        if (isPaused)
+            rb.linearVelocity = Vector2.zero;
+    }
 }

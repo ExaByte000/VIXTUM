@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,33 +10,91 @@ public class VideoSettings : MonoBehaviour
     [SerializeField] private TMP_Dropdown resolutionDropdown;
     [SerializeField] private Toggle fullscreenToggle;
 
+    private DisplayInfo lastDisplayInfo;
+    private bool haveLastDisplayInfo = false;
 
     Resolution[] resolutions;
 
-    void OnEnable()
+    void Update()
     {
-        //resolutions = Screen.resolutions;
-        // Синхронизируем фуллскрин
-        fullscreenToggle.isOn = Screen.fullScreen;
+        var currentDisplay = Screen.mainWindowDisplayInfo;
 
-        //// Синхронизируем разрешение
-        //Resolution current = Screen.currentResolution;
-        //int index = 0;
-        //for (int i = 0; i < resolutions.Length; i++)
-        //{
-        //    if (resolutions[i].width == current.width &&
-        //        resolutions[i].height == current.height)
-        //    {
-        //        index = i;
-        //        break;
-        //    }
-        //}
-        //resolutionDropdown.value = index;
-        //resolutionDropdown.RefreshShownValue();
+        bool monitorChanged = !haveLastDisplayInfo ||
+                              currentDisplay.name != lastDisplayInfo.name ||
+                              currentDisplay.width != lastDisplayInfo.width ||
+                              currentDisplay.height != lastDisplayInfo.height ||
+                              currentDisplay.workArea.width != lastDisplayInfo.workArea.width ||
+                              currentDisplay.workArea.height != lastDisplayInfo.workArea.height;
+
+        if (monitorChanged)
+        {
+            Debug.Log($"Окно перемещено на монитор: {currentDisplay.name} ({currentDisplay.width}x{currentDisplay.height})");
+            OnMonitorChanged(currentDisplay); // вызов своей функции обновления
+            lastDisplayInfo = currentDisplay;
+            haveLastDisplayInfo = true;
+        }
     }
 
-    void Start()
+    private void OnMonitorChanged(DisplayInfo display)
     {
+        // Обновляем состояние полноэкранного режима
+        fullscreenToggle.isOn = Screen.fullScreen;
+
+        // Очищаем dropdown и подготавливаем списки
+        resolutionDropdown.ClearOptions();
+        List<string> options = new List<string>();
+        List<Resolution> filteredResolutions = new List<Resolution>();
+        HashSet<string> uniqueOptions = new HashSet<string>();
+
+        // Получаем все доступные разрешения
+        var allResolutions = Screen.resolutions;
+        int currentResolutionIndex = 0;
+
+        // Фильтруем разрешения по критериям
+        for (int i = 0; i < allResolutions.Length; i++)
+        {
+            var res = allResolutions[i];
+            float refreshRateFloat = (float)res.refreshRateRatio.value;
+            int refreshRateInt = Mathf.RoundToInt(refreshRateFloat);
+            float aspectRatio = (float)res.width / res.height;
+            bool is16to9 = Mathf.Abs(aspectRatio - (16f / 9f)) < 0.01f;
+
+            // Проверяем все условия фильтрации
+            bool isValidRefreshRate = refreshRateInt == 60 || refreshRateInt == 75 ||
+                                     refreshRateInt == 120 || refreshRateInt == 144 ||
+                                     refreshRateInt == 165 || refreshRateInt == 240;
+
+            bool fitsInDisplay = res.width <= display.width && res.height <= display.height;
+
+            if (isValidRefreshRate && is16to9 && fitsInDisplay)
+            {
+                string option = $"{res.width} X {res.height} {refreshRateInt} Hz";
+                if (!uniqueOptions.Contains(option))
+                {
+                    uniqueOptions.Add(option);
+                    options.Add(option);
+                    filteredResolutions.Add(res);
+
+                    // Определяем текущее разрешение для dropdown
+                    if (res.width == Screen.currentResolution.width &&
+                        res.height == Screen.currentResolution.height)
+                    {
+                        currentResolutionIndex = filteredResolutions.Count - 1;
+                    }
+                }
+            }
+        }
+
+        // Обновляем массив разрешений и dropdown
+        resolutions = filteredResolutions.ToArray();
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
+    }
+
+    void OnEnable()
+    {
+        fullscreenToggle.isOn = Screen.fullScreen;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         List<Resolution> filteredResolutions = new List<Resolution>();
@@ -50,12 +109,13 @@ public class VideoSettings : MonoBehaviour
             float refreshRateFloat = (float)resolutions[i].refreshRateRatio.value;
             int refreshRateInt = Mathf.RoundToInt(refreshRateFloat);
 
-            // Оставляем только стандартные частоты
-            if (refreshRateInt == 60 || refreshRateInt == 75 || refreshRateInt == 120 || refreshRateInt == 144 || refreshRateInt == 165 || refreshRateInt == 240)
+            float aspectRatio = (float)resolutions[i].width / resolutions[i].height;
+            bool is16to9 = Mathf.Abs(aspectRatio - (16f / 9f)) < 0.01f;
+
+            if ((refreshRateInt == 60 || refreshRateInt == 75 || refreshRateInt == 120 || refreshRateInt == 144 || refreshRateInt == 165 || refreshRateInt == 240) && is16to9)
             {
                 string option = $"{resolutions[i].width} X {resolutions[i].height} {refreshRateInt} Hz";
 
-                // Проверяем на дубликаты
                 if (!uniqueOptions.Contains(option))
                 {
                     uniqueOptions.Add(option);
@@ -76,6 +136,7 @@ public class VideoSettings : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
     }
+
 
     public void SetFullscreen(bool IsFullscreen)
     {

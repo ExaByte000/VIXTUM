@@ -3,20 +3,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransition : MonoBehaviour
 {
+
+    private void OnEnable()
+    {
+        GamePause.OnPauseChanged += AnimatorEnabled;
+    }
+
+    private void OnDisable()
+    {
+        GamePause.OnPauseChanged += AnimatorEnabled;
+    }
     public void ChangeScene(int scene)
     {
         SceneManager.LoadScene(scene);
     }
 
-    private void Update()
+    private void AnimatorEnabled(bool isEnable)
     {
-        if (GamePause.Instance.IsPaused)
-        {
-            GetComponent<Animator>().enabled = false;
-        }
-        else
-        {
-            GetComponent<Animator>().enabled = true;
-        }
+        GetComponent<Animator>().enabled = isEnable;
     }
 }

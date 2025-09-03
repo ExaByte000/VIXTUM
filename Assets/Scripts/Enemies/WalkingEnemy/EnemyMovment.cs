@@ -14,11 +14,13 @@ public class EnemyMovment : MovmentBase
     private void OnEnable()
     {
         EnemyDetector.EnemyFlipEvent += HandleFlip;
+        GamePause.OnPauseChanged += PauseLogic;
     }
 
     private void OnDisable()
     {
         EnemyDetector.EnemyFlipEvent -= HandleFlip;
+        GamePause.OnPauseChanged += PauseLogic;
     }
 
     private void HandleFlip(bool shouldFaceRight)
@@ -49,5 +51,11 @@ public class EnemyMovment : MovmentBase
     public override void ActionRequest(float moveInput, bool jumpPressed, bool dashPressed)
     {
         this.moveInput = moveInput;
+    }
+
+    private void PauseLogic(bool isPaused)
+    {
+        if (isPaused)
+            rb.linearVelocity = Vector2.zero;
     }
 }
