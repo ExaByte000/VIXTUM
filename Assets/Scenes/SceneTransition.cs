@@ -11,7 +11,7 @@ public class SceneTransition : MonoBehaviour
 
     private void OnDisable()
     {
-        GamePause.OnPauseChanged += AnimatorEnabled;
+        GamePause.OnPauseChanged -= AnimatorEnabled;
     }
     public void ChangeScene(int scene)
     {
