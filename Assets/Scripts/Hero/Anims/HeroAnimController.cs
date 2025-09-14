@@ -32,18 +32,29 @@ public class HeroAnimController : MonoBehaviour
     {
         PlayerCombatSource.HeroAnimAttackDetectorEvent += StartAttackAnim;
         GamePause.OnPauseChanged += HandlePause;
+        Hero.Dead += StartDeathAnim;
     }
     private void OnDisable()
     {
         PlayerCombatSource.HeroAnimAttackDetectorEvent -= StartAttackAnim;
         GamePause.OnPauseChanged -= HandlePause;
+        Hero.Dead -= StartDeathAnim;
     }
 
     private void Update()
     {
         if (GamePause.Instance.IsPaused)
             return;
-    
+
+        AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
+        bool isInDeathState = currentState.IsName("Death"); // замените "Death" на точное имя состояния
+
+        if (anim.GetBool("Death"))
+        {
+            Debug.Log($"DEATH ANIM - State: {currentState.shortNameHash}, Time: {currentState.normalizedTime}, " +
+                     $"Speed: {anim.speed}, IsPlaying: {anim.GetCurrentAnimatorStateInfo(0).length > 0}");
+        }
+
         anim.SetFloat("VerticalVelocity", rigidbody.linearVelocityY);
         anim.SetBool("IsGrounded", jump.IsGrounded);
         anim.SetBool("MovmentFalg", rigidbody.linearVelocityX != 0);
@@ -56,7 +67,6 @@ public class HeroAnimController : MonoBehaviour
             anim.SetBool("Attack1", false);
             anim.SetBool("Attack2", false);
         }
-
     }
 
     private void StartAttackAnim(bool attckStart)
@@ -136,5 +146,12 @@ public class HeroAnimController : MonoBehaviour
     {
         yield return new WaitForSeconds(attackCooldown);
         attackCooldownFlag = false;
+    }
+
+    public void StartDeathAnim(bool death)
+    {
+        Debug.Log($"StartDeathAnim called - Before: Death={anim.GetBool("Death")}");
+        anim.SetBool("Death", true);
+        Debug.Log($"StartDeathAnim called - After: Death={anim.GetBool("Death")}");
     }
 }

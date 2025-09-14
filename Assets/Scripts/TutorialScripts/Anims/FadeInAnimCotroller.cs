@@ -16,7 +16,7 @@ public class FadeInAnimCotroller : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void StartFadeInAnim(int scene)
+    private void StartFadeInAnim(bool d)
     {
         spiderSheepAnimator.enabled = false;
         spiderSounds.StopSounds();

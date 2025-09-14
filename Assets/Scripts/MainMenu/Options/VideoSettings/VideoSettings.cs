@@ -28,7 +28,6 @@ public class VideoSettings : MonoBehaviour
 
         if (monitorChanged)
         {
-            Debug.Log($"Окно перемещено на монитор: {currentDisplay.name} ({currentDisplay.width}x{currentDisplay.height})");
             OnMonitorChanged(currentDisplay); // вызов своей функции обновления
             lastDisplayInfo = currentDisplay;
             haveLastDisplayInfo = true;

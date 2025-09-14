@@ -623,7 +623,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1350,8 +1350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90.1, y: 53.00001}
-  m_SizeDelta: {x: 172.71, y: 30}
+  m_AnchoredPosition: {x: 89.3, y: 53.00001}
+  m_SizeDelta: {x: 224.08, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299713104
 MonoBehaviour:
@@ -1935,7 +1935,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2759,7 +2759,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2955,7 +2955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &656363489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,7 +3707,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4862,7 +4862,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5670,6 +5670,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edb67ad843416740864832a6ad11611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1015596037 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9162842594692032213, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+  m_PrefabInstance: {fileID: 1758874058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1021230505
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,7 +5797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2662055, y: 0.39400002}
   m_AnchorMax: {x: 0.7325421, y: 0.48131374}
-  m_AnchoredPosition: {x: -3.7999992, y: -72.600006}
+  m_AnchoredPosition: {x: -3.7999954, y: -72.599976}
   m_SizeDelta: {x: -15.96, y: 37.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1039098504
@@ -5920,7 +5925,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6972,7 +6977,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7330,7 +7335,7 @@ Transform:
   m_GameObject: {fileID: 1281485183}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102.441, y: 12, z: 0}
+  m_LocalPosition: {x: -102.44104, y: 12, z: 0}
   m_LocalScale: {x: 2.2737, y: 2.2737, z: 2.2737}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7674,7 +7679,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7770,7 +7775,7 @@ Transform:
   m_GameObject: {fileID: 1359207409}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -102.441, y: -12.299999, z: 0}
+  m_LocalPosition: {x: -102.44104, y: -12.299999, z: 0}
   m_LocalScale: {x: 2.2737, y: 2.2737, z: 2.2737}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8675,7 +8680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3105792, y: 0.23134317}
   m_AnchorMax: {x: 0.71300006, y: 0.3053137}
-  m_AnchoredPosition: {x: -0.1444397, y: -0.3000183}
+  m_AnchoredPosition: {x: -0.1444397, y: -0.2999878}
   m_SizeDelta: {x: -0.28179932, y: 1.2154999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476635842
@@ -8708,7 +8713,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 0.9490196}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9007,7 +9012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1591613968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9537,6 +9542,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 364182444656303375, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: m_Size.x
+      value: 9.33095
+      objectReference: {fileID: 0}
+    - target: {fileID: 364182444656303375, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
+      propertyPath: m_Size.y
+      value: 9.7699995
+      objectReference: {fileID: 0}
+    - target: {fileID: 364182444656303375, guid: c52283596b3b8d241ab7f29cb071e9a0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7675153496257111184, guid: 5679b3c3115ed6c45a2409ff57e6d076, type: 3}
@@ -9712,6 +9725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2031873390}
+  heroAnimator: {fileID: 1015596037}
 --- !u!114 &1758874066
 MonoBehaviour:
   m_ObjectHideFlags: 0

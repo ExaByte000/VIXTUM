@@ -5,7 +5,7 @@ using System;
 
 public class Hero : Entity
 {
-    public static Action<int> Dead;
+    public static Action<bool> Dead;
     [SerializeField] private int SceneNumber = 0;
 
     private void Awake()
@@ -26,6 +26,7 @@ public class Hero : Entity
 
     protected override void Die()
     {
-        Dead.Invoke(SceneNumber);
+        Dead.Invoke(true);
     }
+
 }

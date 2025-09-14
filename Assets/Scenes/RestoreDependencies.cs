@@ -9,6 +9,7 @@ public class RestoreDependencies : MonoBehaviour
 {
 
     [SerializeField] private GameObject camera;
+    [SerializeField] private Animator heroAnimator;
 
     private CinemachineConfiner2D CCamConfinder;
 
@@ -26,6 +27,9 @@ public class RestoreDependencies : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Hero hero = GetComponent<Hero>();
+        Debug.Log($"OnSceneLoaded - Before reset: Death={heroAnimator.GetBool("Death")}");
+        heroAnimator.SetBool("Death", false);
+        Debug.Log($"OnSceneLoaded - After reset: Death={heroAnimator.GetBool("Death")}");
 
 
         if (camera.TryGetComponent<CinemachineCamera>(out var CCam) && scene.name == "MainScene")
